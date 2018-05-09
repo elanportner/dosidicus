@@ -1,0 +1,846 @@
+Ref,Monthly..,year,Date,Locality,ML,Weight,SEX,Mat.Stage,prey,rostral,item,length,SL,TL,ML
+,2,2010,6/5/10,Guaymas Basin,29,0.5,F,3,Benthosema,,Otolith.1,2.2,41.2815,51.69788,
+,5,2010,6/5/10,Guaymas Basin,34.5,0.8,F,5,Benthosema,,Otolith.1,2.05,38.44125,47.94617,
+,9,2010,6/5/10,Guaymas Basin,30,0.63,F,5,Benthosema,,Otolith.1,2.1,39.388,49.19674,
+,23,2010,6/5/10,Guaymas Basin,29,0.43,M,5,Benthosema,,Otolith.1,2.1,39.388,49.19674,
+,25,2010,6/5/10,Guaymas Basin,33,0.85,F,3,Benthosema,,Otolith.1,2.1,39.388,49.19674,
+,12,2010,6/5/10,Rosalia - Marcos,22.5,0.21,F,2,Benthosema,,Otolith.1,2.1,39.388,49.19674,
+,15,2010,6/5/10,Rosalia - Marcos,21.5,0.16,F,2,Benthosema,,Otolith.1,1.4,26.1335,31.68876,
+,16,2010,6/5/10,Rosalia - Marcos,28.5,0.44,M,5,Benthosema,,Otolith.1,1.5,28.027,34.1899,
+,21,2010,6/5/10,Rosalia - Marcos,27,0.38,F,2,Benthosema,,Otolith.1,1.7,31.814,39.19218,
+,6,2010,6/9/10,San Raphael,58,5.2,F,2,Benthosema,,Otolith.1,1.85,34.65425,42.94389,
+,,2010,6/11/10,San Raphael,NA,NA,,NA,Benthosema,,Otolith.1,1.85,34.65425,42.94389,
+,2,2010,6/12/10,Guaymas Basin,29,0.5,F,3,Benthosema,,Otolith.1,0.8,14.7725,16.68192,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Benthosema,,Otolith.1,1.3,24.24,29.18762,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Benthosema,,Otolith.1,1.85,34.65425,42.94389,
+,1,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.2,Female,5,Benthosema,,Otolith.1,2.04,38.2519,47.696056,
+,2,2011,6/9/11,Outside of Guaymas Harbor,39.5,1.4,Female,5,Benthosema,,Otolith.1,2.08,39.0093,48.696512,
+,4,2011,6/9/11,Outside of Guaymas Harbor,30,0.6,Male,4,Benthosema,,Otolith.1,2.04,38.2519,47.696056,
+,5,2011,6/9/11,Outside of Guaymas Harbor,38,1.2,Female,5,Benthosema,,Otolith.1,2.24,42.0389,52.698336,
+,7,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.2,Female,5,Benthosema,,Otolith.1,2.16,40.5241,50.697424,
+,8,2011,6/9/11,Outside of Guaymas Harbor,35.5,1,Female,5,Benthosema,,Otolith.1,1.8,33.7075,41.69332,
+,10,2011,6/9/11,Outside of Guaymas Harbor,44,1.9,Female,5,Benthosema,,Otolith.1,2.04,38.2519,47.696056,
+,12,2011,6/9/11,Outside of Guaymas Harbor,40,1.5,Female,5,Benthosema,,Otolith.1,1.96,36.7371,45.695144,
+,13,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.2,Female,2,Benthosema,,Otolith.1,2.32,43.5537,54.699248,
+,14,2011,6/9/11,Outside of Guaymas Harbor,36,1,Female,4,Benthosema,,Otolith.1,2.12,39.7667,49.696968,
+,15,2011,6/9/11,Outside of Guaymas Harbor,32,NA,Female,5,Benthosema,,Otolith.1,2.4,45.0685,56.70016,
+,16,2011,6/9/11,Outside of Guaymas Harbor,30,NA,Female,5,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,17,2011,6/9/11,Outside of Guaymas Harbor,42.5,1.9,Female,5,Benthosema,,Otolith.1,2.4,45.0685,56.70016,
+,18,2011,6/9/11,Outside of Guaymas Harbor,40.5,1.4,Female,5,Benthosema,,Otolith.1,1.8,33.7075,41.69332,
+,19,2011,6/9/11,Outside of Guaymas Harbor,33.5,0.8,Female,5,Benthosema,,Otolith.1,2.32,43.5537,54.699248,
+,1,2011,6/10/11,South of Nolasco Island,35.5,1,Female,5,Benthosema,,Otolith.1,2.08,39.0093,48.696512,
+,5,2011,6/10/11,South of Nolasco Island,36,1,Female,3,Benthosema,,Otolith.1,2.36,44.3111,55.699704,
+,6,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Benthosema,,Otolith.1,2.4,45.0685,56.70016,
+,7,2011,6/10/11,South of Nolasco Island,33,0.7,Female,4,Benthosema,,Otolith.1,2.2,41.2815,51.69788,
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Benthosema,,Otolith.1,1.92,35.9797,44.694688,
+,11,2011,6/10/11,South of Nolasco Island,36,1,Male,5,Benthosema,,Otolith.1,1.64,30.6779,37.691496,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.1,2.28,42.7963,53.698792,
+,13,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Benthosema,,Otolith.1,2.48,46.5833,58.701072,
+,14,2011,6/10/11,South of Nolasco Island,41,1.5,Female,5,Benthosema,,Otolith.1,2.08,39.0093,48.696512,
+,15,2011,6/10/11,South of Nolasco Island,38,1.1,Male,5,Benthosema,,Otolith.1,2.24,42.0389,52.698336,
+,19,2011,6/10/11,South of Nolasco Island,41,1.4,Female,5,Benthosema,,Otolith.1,2.32,43.5537,54.699248,
+,22 - D?,2011,6/10/11,South of Nolasco Island,33.5,NA,,NA,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Benthosema,,Otolith.1,2.08,39.0093,48.696512,
+,2,2011,6/11/11,Guaymas Basin,25,NA,,NA,Benthosema,,Otolith.1,2.2,41.2815,51.69788,
+,24,2011,6/11/11,Guaymas Basin,25.5,0.3,Male,3,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,9,2011,6/12/11,Rosalia - Marcos,30,0.6,Male,3,Benthosema,,Otolith.1,1.76,32.9501,40.692864,
+,13,2011,6/12/11,Rosalia - Marcos,34,0.9,Female,2,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,17,2011,6/12/11,Rosalia - Marcos,25.5,0.3,Female,2,Benthosema,,Otolith.1,2.48,46.5833,58.701072,
+,5,2011,6/13/11,Tortuga,35,0.9,Female,5,Benthosema,,Otolith.1,1.92,35.9797,44.694688,
+,13,2011,6/13/11,Tortuga,25.5,0.4,Female,2,Benthosema,,Otolith.1,1.88,35.2223,43.694232,
+,16,2011,6/13/11,Tortuga,21.5,0.2,Female,2,Benthosema,,Otolith.1,1.6,29.9205,36.69104,
+,17,2011,6/13/11,Tortuga,24,0.3,Female,2,Benthosema,,Otolith.1,1.64,30.6779,37.691496,
+,23,2011,6/13/11,Tortuga,29.5,0.5,Male,5,Benthosema,,Otolith.1,1.96,36.7371,45.695144,
+,24,2011,6/13/11,Tortuga,27,0.4,Female,2,Benthosema,,Otolith.1,2.04,38.2519,47.696056,
+,25,2011,6/13/11,Tortuga,26.5,0.4,Male,2,Benthosema,,Otolith.1,2.2,41.2815,51.69788,
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,27,2011,6/13/11,Tortuga,23,0.3,Female,2,Benthosema,,Otolith.1,1.84,34.4649,42.693776,
+,28,2011,6/13/11,Tortuga,27,0.5,Female,2,Benthosema,,Otolith.1,1.76,32.9501,40.692864,
+,29,2011,6/13/11,Tortuga,21.5,0.2,Male,2,Benthosema,,Otolith.1,2.04,38.2519,47.696056,
+,1,2011,6/14/11,San Carlos Bay,42,1.6,Female,5,Benthosema,,Otolith.1,2.16,40.5241,50.697424,
+,2,2011,6/14/11,San Carlos Bay,39.5,1.2,Male,3,Benthosema,,Otolith.1,1.76,32.9501,40.692864,
+,3,2011,6/14/11,San Carlos Bay,36.5,1,Female,2,Benthosema,,Otolith.1,1.88,35.2223,43.694232,
+,5,2011,6/14/11,San Carlos Bay,39.5,1.5,Male,5,Benthosema,,Otolith.1,1.8,33.7075,41.69332,
+,6,2011,6/14/11,San Carlos Bay,34,0.7,Male,5,Benthosema,,Otolith.1,1.84,34.4649,42.693776,
+,7,2011,6/14/11,San Carlos Bay,39.5,1.2,Male,5,Benthosema,,Otolith.1,2.24,42.0389,52.698336,
+,13,2011,6/14/11,San Carlos Bay,34,0.8,Male,3,Benthosema,,Otolith.1,1.68,31.4353,38.691952,
+,14,2011,6/14/11,San Carlos Bay,33,0.8,Male,3,Benthosema,,Otolith.1,2.08,39.0093,48.696512,
+,16,2011,6/14/11,San Carlos Bay,37,1.3,Female,2,Benthosema,,Otolith.1,1.76,32.9501,40.692864,
+,17,2011,6/14/11,San Carlos Bay,40,1.3,Male,5,Benthosema,,Otolith.1,1.8,33.7075,41.69332,
+,20,2011,6/14/11,San Carlos Bay,34,0.8,Male,5,Benthosema,,Otolith.1,1.92,35.9797,44.694688,
+,21,2011,6/14/11,San Carlos Bay,36,1,Male,5,Benthosema,,Otolith.1,1.88,35.2223,43.694232,
+,27,2011,6/14/11,San Carlos Bay,34,0.8,,NA,Benthosema,,Otolith.1,1.76,32.9501,40.692864,
+,30,2011,6/14/11,San Carlos Bay,43,1.7,,NA,Benthosema,,Otolith.1,1.96,36.7371,45.695144,
+,C ,2011,6/14/11,San Carlos Bay,NA,NA,,NA,Benthosema,,Otolith.1,1.84,34.4649,42.693776,
+,2,2011,6/15/11,San Raphael,37,1.1,Female,2,Benthosema,,Otolith.1,2.12,39.7667,49.696968,
+,6,2011,6/15/11,San Raphael,38.5,1.3,Female,2,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,7,2011,6/15/11,San Raphael,39,1.3,Female,2,Benthosema,,Otolith.1,1.96,36.7371,45.695144,
+,10,2011,6/15/11,San Raphael,40.5,1.6,Female,3,Benthosema,,Otolith.1,1.8,33.7075,41.69332,
+,12,2011,6/15/11,San Raphael,39.5,1.3,Male,2,Benthosema,,Otolith.1,1.64,30.6779,37.691496,
+,1,2011,6/16/11,Animas,33.5,0.8,Female,2,Benthosema,,Otolith.1,1.92,35.9797,44.694688,
+,3,2011,6/16/11,Animas,47,2.6,Female,3,Benthosema,,Otolith.1,1.84,34.4649,42.693776,
+,6,2011,6/16/11,Animas,39,1.4,Male,2,Benthosema,,Otolith.1,1.68,31.4353,38.691952,
+,11,2011,6/16/11,Animas,42,1.7,Female,2,Benthosema,,Otolith.1,1.92,35.9797,44.694688,
+,12,2011,6/16/11,Animas,43,2.2,Female,3,Benthosema,,Otolith.1,2.04,38.2519,47.696056,
+,13,2011,6/16/11,Animas,41,1.6,Male,3,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,14,2011,6/16/11,Animas,53.5,3.9,Male,5,Benthosema,,Otolith.1,1.92,35.9797,44.694688,
+,15,2011,6/16/11,Animas,38,1.3,Female,2,Benthosema,,Otolith.1,1.84,34.4649,42.693776,
+,17,2011,6/16/11,Animas,40,1.4,Female,3,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,21,2011,6/16/11,Animas,39.5,1.3,Female,2,Benthosema,,Otolith.1,1.6,29.9205,36.69104,
+,24,2011,6/16/11,Animas,42,1.6,Male,5,Benthosema,,Otolith.1,2.2,41.2815,51.69788,
+,4,2011,6/17/11,Guaymas Basin,24.5,0.3,Female,2,Benthosema,,Otolith.1,1.84,34.4649,42.693776,
+,7,2011,6/17/11,Guaymas Basin,23.5,0.3,Female,2,Benthosema,,Otolith.1,1.92,35.9797,44.694688,
+,1,2011,6/18/11,Guaymas Basin,36.5,1.1,Female,2,Benthosema,,Otolith.1,2.44,45.8259,57.700616,
+,2,2011,6/18/11,Guaymas Basin,36,1.1,Female,5,Benthosema,,Otolith.1,2.28,42.7963,53.698792,
+,10,2011,6/18/11,Guaymas Basin,24,0.3,Female,5,Benthosema,,Otolith.1,2.44,45.8259,57.700616,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.1,2.28,42.7963,53.698792,
+,12,2011,6/18/11,Guaymas Basin,32.5,0.7,Female,5,Benthosema,,Otolith.1,2.08,39.0093,48.696512,
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Benthosema,,Otolith.1,2.16,40.5241,50.697424,
+,17,2011,6/18/11,Guaymas Basin,23.5,0.3,Female,2,Benthosema,,Otolith.1,1.96,36.7371,45.695144,
+,18,2011,6/18/11,Guaymas Basin,24,0.3,Female,2,Benthosema,,Otolith.1,1.92,35.9797,44.694688,
+,24,2011,6/18/11,Guaymas Basin,24,0.3,Male,3,Benthosema,,Otolith.1,2.08,39.0093,48.696512,
+,25,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Benthosema,,Otolith.1,2.08,39.0093,48.696512,
+,26,2011,6/18/11,Guaymas Basin,35.5,0.8,Female,5,Benthosema,,Otolith.1,2.2,41.2815,51.69788,
+,27,2011,6/18/11,Guaymas Basin,38,1.1,Female,5,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,4,2011,6/19/11,Rosalia-Marcos,36,1,Female,4,Benthosema,,Otolith.1,2.16,40.5241,50.697424,
+,14,2011,6/19/11,Rosalia-Marcos,36.5,1,Male,5,Benthosema,,Otolith.1,2.04,38.2519,47.696056,
+,22,2011,6/19/11,Rosalia-Marcos,36.5,1,Male,5,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,A,2011,6/20/11,Guaymas Basin,NA,NA,,NA,Benthosema,,Otolith.1,2.44,45.8259,57.700616,
+,3,2011,6/20/11,Guaymas Basin,41.5,1.8,Female,5,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,4,2011,6/20/11,Guaymas Basin,36,1,Female,5,Benthosema,,Otolith.1,2.08,39.0093,48.696512,
+,5,2011,6/20/11,Guaymas Basin,39,1.3,Female,5,Benthosema,,Otolith.1,2.16,40.5241,50.697424,
+,7,2011,6/20/11,Guaymas Basin,39,1.3,Female,5,Benthosema,,Otolith.1,2.6,48.8555,61.70244,
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Benthosema,,Otolith.1,1.76,32.9501,40.692864,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.1,1.88,35.2223,43.694232,
+,32,2011,6/20/11,Guaymas Basin,31.5,0.7,Female,5,Benthosema,,Otolith.1,2.28,42.7963,53.698792,
+,1,2011,6/21/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.1,2.28,42.7963,53.698792,
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Benthosema,,Otolith.1,2.28,42.7963,53.698792,
+,10,2011,6/21/11,Guaymas Basin,32.5,0.7,Female,5,Benthosema,,Otolith.1,1.92,35.9797,44.694688,
+,11,2011,6/21/11,Guaymas Basin,41,1.4,Female,5,Benthosema,,Otolith.1,2.12,39.7667,49.696968,
+,14,2011,6/21/11,Guaymas Basin,37,1.1,Male,5,Benthosema,,Otolith.1,2,37.4945,46.6956,
+,17,2011,6/21/11,Guaymas Basin,30.5,0.7,Female,3,Benthosema,,Otolith.1,2.4,45.0685,56.70016,
+,27,2011,6/21/11,Guaymas Basin,30,0.6,Female,5,Benthosema,,Otolith.1,2.2,41.2815,51.69788,
+,14,2011,6/22/11,Nolasco box,40.5,1.4,Female,5,Benthosema,,Otolith.1,2.36,44.3111,55.699704,
+,5,2010,6/5/10,Guaymas Basin,34.5,0.8,F,5,Benthosema,,Otolith.2,2.2,41.2815,51.69788,
+,9,2010,6/5/10,Guaymas Basin,30,0.63,F,5,Benthosema,,Otolith.2,1.8,33.7075,41.69332,
+,16,2010,6/5/10,Rosalia - Marcos,28.5,0.44,M,5,Benthosema,,Otolith.2,1.05,19.50625,22.93477,
+,21,2010,6/5/10,Rosalia - Marcos,27,0.38,F,2,Benthosema,,Otolith.2,1.4,26.1335,31.68876,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Benthosema,,Otolith.2,1.15,21.39975,25.43591,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Benthosema,,Otolith.2,1.75,32.76075,40.44275,
+,1,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.2,Female,5,Benthosema,,Otolith.2,2.4,45.0685,56.70016,
+,5,2011,6/9/11,Outside of Guaymas Harbor,38,1.2,Female,5,Benthosema,,Otolith.2,1.84,34.4649,42.693776,
+,7,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.2,Female,5,Benthosema,,Otolith.2,2,37.4945,46.6956,
+,8,2011,6/9/11,Outside of Guaymas Harbor,35.5,1,Female,5,Benthosema,,Otolith.2,1.96,36.7371,45.695144,
+,12,2011,6/9/11,Outside of Guaymas Harbor,40,1.5,Female,5,Benthosema,,Otolith.2,2.04,38.2519,47.696056,
+,14,2011,6/9/11,Outside of Guaymas Harbor,36,1,Female,4,Benthosema,,Otolith.2,2.4,45.0685,56.70016,
+,15,2011,6/9/11,Outside of Guaymas Harbor,32,NA,Female,5,Benthosema,,Otolith.2,2.4,45.0685,56.70016,
+,16,2011,6/9/11,Outside of Guaymas Harbor,30,NA,Female,5,Benthosema,,Otolith.2,2.04,38.2519,47.696056,
+,17,2011,6/9/11,Outside of Guaymas Harbor,42.5,1.9,Female,5,Benthosema,,Otolith.2,2.36,44.3111,55.699704,
+,18,2011,6/9/11,Outside of Guaymas Harbor,40.5,1.4,Female,5,Benthosema,,Otolith.2,2.12,39.7667,49.696968,
+,19,2011,6/9/11,Outside of Guaymas Harbor,33.5,0.8,Female,5,Benthosema,,Otolith.2,2.24,42.0389,52.698336,
+,1,2011,6/10/11,South of Nolasco Island,35.5,1,Female,5,Benthosema,,Otolith.2,2.12,39.7667,49.696968,
+,6,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Benthosema,,Otolith.2,2.32,43.5537,54.699248,
+,7,2011,6/10/11,South of Nolasco Island,33,0.7,Female,4,Benthosema,,Otolith.2,2.16,40.5241,50.697424,
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Benthosema,,Otolith.2,1.92,35.9797,44.694688,
+,11,2011,6/10/11,South of Nolasco Island,36,1,Male,5,Benthosema,,Otolith.2,1.76,32.9501,40.692864,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.2,2.28,42.7963,53.698792,
+,13,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Benthosema,,Otolith.2,2.24,42.0389,52.698336,
+,19,2011,6/10/11,South of Nolasco Island,41,1.4,Female,5,Benthosema,,Otolith.2,2.2,41.2815,51.69788,
+,22 - D?,2011,6/10/11,South of Nolasco Island,33.5,NA,,NA,Benthosema,,Otolith.2,2.12,39.7667,49.696968,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Benthosema,,Otolith.2,2.04,38.2519,47.696056,
+,2,2011,6/11/11,Guaymas Basin,25,NA,,NA,Benthosema,,Otolith.2,2.08,39.0093,48.696512,
+,25,2011,6/13/11,Tortuga,26.5,0.4,Male,2,Benthosema,,Otolith.2,2,37.4945,46.6956,
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Benthosema,,Otolith.2,2.04,38.2519,47.696056,
+,27,2011,6/13/11,Tortuga,23,0.3,Female,2,Benthosema,,Otolith.2,2.16,40.5241,50.697424,
+,3,2011,6/14/11,San Carlos Bay,36.5,1,Female,2,Benthosema,,Otolith.2,1.84,34.4649,42.693776,
+,7,2011,6/14/11,San Carlos Bay,39.5,1.2,Male,5,Benthosema,,Otolith.2,2.24,42.0389,52.698336,
+,13,2011,6/14/11,San Carlos Bay,34,0.8,Male,3,Benthosema,,Otolith.2,1.68,31.4353,38.691952,
+,14,2011,6/14/11,San Carlos Bay,33,0.8,Male,3,Benthosema,,Otolith.2,1.88,35.2223,43.694232,
+,17,2011,6/14/11,San Carlos Bay,40,1.3,Male,5,Benthosema,,Otolith.2,2,37.4945,46.6956,
+,27,2011,6/14/11,San Carlos Bay,34,0.8,,NA,Benthosema,,Otolith.2,1.92,35.9797,44.694688,
+,2,2011,6/15/11,San Raphael,37,1.1,Female,2,Benthosema,,Otolith.2,1.88,35.2223,43.694232,
+,7,2011,6/15/11,San Raphael,39,1.3,Female,2,Benthosema,,Otolith.2,1.96,36.7371,45.695144,
+,12,2011,6/15/11,San Raphael,39.5,1.3,Male,2,Benthosema,,Otolith.2,1.68,31.4353,38.691952,
+,1,2011,6/16/11,Animas,33.5,0.8,Female,2,Benthosema,,Otolith.2,1.88,35.2223,43.694232,
+,3,2011,6/16/11,Animas,47,2.6,Female,3,Benthosema,,Otolith.2,1.64,30.6779,37.691496,
+,11,2011,6/16/11,Animas,42,1.7,Female,2,Benthosema,,Otolith.2,1.68,31.4353,38.691952,
+,15,2011,6/16/11,Animas,38,1.3,Female,2,Benthosema,,Otolith.2,1.8,33.7075,41.69332,
+,17,2011,6/16/11,Animas,40,1.4,Female,3,Benthosema,,Otolith.2,2,37.4945,46.6956,
+,21,2011,6/16/11,Animas,39.5,1.3,Female,2,Benthosema,,Otolith.2,1.92,35.9797,44.694688,
+,1,2011,6/18/11,Guaymas Basin,36.5,1.1,Female,2,Benthosema,,Otolith.2,2.08,39.0093,48.696512,
+,10,2011,6/18/11,Guaymas Basin,24,0.3,Female,5,Benthosema,,Otolith.2,2.68,50.3703,63.703352,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.2,2.04,38.2519,47.696056,
+,12,2011,6/18/11,Guaymas Basin,32.5,0.7,Female,5,Benthosema,,Otolith.2,2.12,39.7667,49.696968,
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Benthosema,,Otolith.2,2.12,39.7667,49.696968,
+,17,2011,6/18/11,Guaymas Basin,23.5,0.3,Female,2,Benthosema,,Otolith.2,1.96,36.7371,45.695144,
+,18,2011,6/18/11,Guaymas Basin,24,0.3,Female,2,Benthosema,,Otolith.2,1.84,34.4649,42.693776,
+,24,2011,6/18/11,Guaymas Basin,24,0.3,Male,3,Benthosema,,Otolith.2,1.92,35.9797,44.694688,
+,25,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Benthosema,,Otolith.2,2.32,43.5537,54.699248,
+,26,2011,6/18/11,Guaymas Basin,35.5,0.8,Female,5,Benthosema,,Otolith.2,2.04,38.2519,47.696056,
+,27,2011,6/18/11,Guaymas Basin,38,1.1,Female,5,Benthosema,,Otolith.2,2.24,42.0389,52.698336,
+,A,2011,6/20/11,Guaymas Basin,NA,NA,,NA,Benthosema,,Otolith.2,2.08,39.0093,48.696512,
+,3,2011,6/20/11,Guaymas Basin,41.5,1.8,Female,5,Benthosema,,Otolith.2,2.4,45.0685,56.70016,
+,4,2011,6/20/11,Guaymas Basin,36,1,Female,5,Benthosema,,Otolith.2,2.12,39.7667,49.696968,
+,7,2011,6/20/11,Guaymas Basin,39,1.3,Female,5,Benthosema,,Otolith.2,2.04,38.2519,47.696056,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.2,1.76,32.9501,40.692864,
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Benthosema,,Otolith.2,2.04,38.2519,47.696056,
+,10,2011,6/21/11,Guaymas Basin,32.5,0.7,Female,5,Benthosema,,Otolith.2,2,37.4945,46.6956,
+,17,2011,6/21/11,Guaymas Basin,30.5,0.7,Female,3,Benthosema,,Otolith.2,2.56,48.0981,60.701984,
+,27,2011,6/21/11,Guaymas Basin,30,0.6,Female,5,Benthosema,,Otolith.2,2.16,40.5241,50.697424,
+,5,2010,6/5/10,Guaymas Basin,34.5,0.8,F,5,Benthosema,,Otolith.3,1.6,29.9205,36.69104,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Benthosema,,Otolith.3,0.9,16.666,19.18306,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Benthosema,,Otolith.3,1.55,28.97375,35.44047,
+,1,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.2,Female,5,Benthosema,,Otolith.3,1.96,36.7371,45.695144,
+,14,2011,6/9/11,Outside of Guaymas Harbor,36,1,Female,4,Benthosema,,Otolith.3,2.08,39.0093,48.696512,
+,15,2011,6/9/11,Outside of Guaymas Harbor,32,NA,Female,5,Benthosema,,Otolith.3,2.4,45.0685,56.70016,
+,17,2011,6/9/11,Outside of Guaymas Harbor,42.5,1.9,Female,5,Benthosema,,Otolith.3,1.68,31.4353,38.691952,
+,18,2011,6/9/11,Outside of Guaymas Harbor,40.5,1.4,Female,5,Benthosema,,Otolith.3,2.24,42.0389,52.698336,
+,1,2011,6/10/11,South of Nolasco Island,35.5,1,Female,5,Benthosema,,Otolith.3,1.8,33.7075,41.69332,
+,6,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Benthosema,,Otolith.3,2.16,40.5241,50.697424,
+,7,2011,6/10/11,South of Nolasco Island,33,0.7,Female,4,Benthosema,,Otolith.3,1.84,34.4649,42.693776,
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Benthosema,,Otolith.3,1.8,33.7075,41.69332,
+,11,2011,6/10/11,South of Nolasco Island,36,1,Male,5,Benthosema,,Otolith.3,1.92,35.9797,44.694688,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.3,2.16,40.5241,50.697424,
+,13,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Benthosema,,Otolith.3,1.88,35.2223,43.694232,
+,22 - D?,2011,6/10/11,South of Nolasco Island,33.5,NA,,NA,Benthosema,,Otolith.3,2.04,38.2519,47.696056,
+,25,2011,6/13/11,Tortuga,26.5,0.4,Male,2,Benthosema,,Otolith.3,2.04,38.2519,47.696056,
+,3,2011,6/14/11,San Carlos Bay,36.5,1,Female,2,Benthosema,,Otolith.3,1.84,34.4649,42.693776,
+,7,2011,6/14/11,San Carlos Bay,39.5,1.2,Male,5,Benthosema,,Otolith.3,1.84,34.4649,42.693776,
+,13,2011,6/14/11,San Carlos Bay,34,0.8,Male,3,Benthosema,,Otolith.3,1.84,34.4649,42.693776,
+,14,2011,6/14/11,San Carlos Bay,33,0.8,Male,3,Benthosema,,Otolith.3,1.8,33.7075,41.69332,
+,17,2011,6/14/11,San Carlos Bay,40,1.3,Male,5,Benthosema,,Otolith.3,1.68,31.4353,38.691952,
+,27,2011,6/14/11,San Carlos Bay,34,0.8,,NA,Benthosema,,Otolith.3,1.84,34.4649,42.693776,
+,12,2011,6/15/11,San Raphael,39.5,1.3,Male,2,Benthosema,,Otolith.3,1.92,35.9797,44.694688,
+,11,2011,6/16/11,Animas,42,1.7,Female,2,Benthosema,,Otolith.3,1.64,30.6779,37.691496,
+,21,2011,6/16/11,Animas,39.5,1.3,Female,2,Benthosema,,Otolith.3,2.12,39.7667,49.696968,
+,10,2011,6/18/11,Guaymas Basin,24,0.3,Female,5,Benthosema,,Otolith.3,2,37.4945,46.6956,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.3,2.04,38.2519,47.696056,
+,12,2011,6/18/11,Guaymas Basin,32.5,0.7,Female,5,Benthosema,,Otolith.3,2,37.4945,46.6956,
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Benthosema,,Otolith.3,2.64,49.6129,62.702896,
+,17,2011,6/18/11,Guaymas Basin,23.5,0.3,Female,2,Benthosema,,Otolith.3,2.2,41.2815,51.69788,
+,18,2011,6/18/11,Guaymas Basin,24,0.3,Female,2,Benthosema,,Otolith.3,2.04,38.2519,47.696056,
+,24,2011,6/18/11,Guaymas Basin,24,0.3,Male,3,Benthosema,,Otolith.3,2.16,40.5241,50.697424,
+,25,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Benthosema,,Otolith.3,2.28,42.7963,53.698792,
+,27,2011,6/18/11,Guaymas Basin,38,1.1,Female,5,Benthosema,,Otolith.3,1.88,35.2223,43.694232,
+,3,2011,6/20/11,Guaymas Basin,41.5,1.8,Female,5,Benthosema,,Otolith.3,1.88,35.2223,43.694232,
+,4,2011,6/20/11,Guaymas Basin,36,1,Female,5,Benthosema,,Otolith.3,2.16,40.5241,50.697424,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.3,1.84,34.4649,42.693776,
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Benthosema,,Otolith.3,1.96,36.7371,45.695144,
+,17,2011,6/21/11,Guaymas Basin,30.5,0.7,Female,3,Benthosema,,Otolith.3,2.24,42.0389,52.698336,
+,27,2011,6/21/11,Guaymas Basin,30,0.6,Female,5,Benthosema,,Otolith.3,1.92,35.9797,44.694688,
+,5,2010,6/5/10,Guaymas Basin,34.5,0.8,F,5,Benthosema,,Otolith.4,1.6,29.9205,36.69104,
+,14,2011,6/9/11,Outside of Guaymas Harbor,36,1,Female,4,Benthosema,,Otolith.4,1.84,34.4649,42.693776,
+,15,2011,6/9/11,Outside of Guaymas Harbor,32,NA,Female,5,Benthosema,,Otolith.4,2.16,40.5241,50.697424,
+,6,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Benthosema,,Otolith.4,1.88,35.2223,43.694232,
+,7,2011,6/10/11,South of Nolasco Island,33,0.7,Female,4,Benthosema,,Otolith.4,1.56,29.1631,35.690584,
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Benthosema,,Otolith.4,1.8,33.7075,41.69332,
+,11,2011,6/10/11,South of Nolasco Island,36,1,Male,5,Benthosema,,Otolith.4,2.04,38.2519,47.696056,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.4,2.24,42.0389,52.698336,
+,13,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Benthosema,,Otolith.4,1.92,35.9797,44.694688,
+,22 - D?,2011,6/10/11,South of Nolasco Island,33.5,NA,,NA,Benthosema,,Otolith.4,2.2,41.2815,51.69788,
+,25,2011,6/13/11,Tortuga,26.5,0.4,Male,2,Benthosema,,Otolith.4,1.8,33.7075,41.69332,
+,3,2011,6/14/11,San Carlos Bay,36.5,1,Female,2,Benthosema,,Otolith.4,1.96,36.7371,45.695144,
+,7,2011,6/14/11,San Carlos Bay,39.5,1.2,Male,5,Benthosema,,Otolith.4,1.96,36.7371,45.695144,
+,13,2011,6/14/11,San Carlos Bay,34,0.8,Male,3,Benthosema,,Otolith.4,1.92,35.9797,44.694688,
+,14,2011,6/14/11,San Carlos Bay,33,0.8,Male,3,Benthosema,,Otolith.4,1.56,29.1631,35.690584,
+,17,2011,6/14/11,San Carlos Bay,40,1.3,Male,5,Benthosema,,Otolith.4,1.84,34.4649,42.693776,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.4,1.84,34.4649,42.693776,
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Benthosema,,Otolith.4,2.04,38.2519,47.696056,
+,18,2011,6/18/11,Guaymas Basin,24,0.3,Female,2,Benthosema,,Otolith.4,2.08,39.0093,48.696512,
+,24,2011,6/18/11,Guaymas Basin,24,0.3,Male,3,Benthosema,,Otolith.4,2.2,41.2815,51.69788,
+,3,2011,6/20/11,Guaymas Basin,41.5,1.8,Female,5,Benthosema,,Otolith.4,2.12,39.7667,49.696968,
+,4,2011,6/20/11,Guaymas Basin,36,1,Female,5,Benthosema,,Otolith.4,2.24,42.0389,52.698336,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.4,1.72,32.1927,39.692408,
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Benthosema,,Otolith.4,2.04,38.2519,47.696056,
+,15,2011,6/9/11,Outside of Guaymas Harbor,32,NA,Female,5,Benthosema,,Otolith.5,2.24,42.0389,52.698336,
+,6,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Benthosema,,Otolith.5,1.92,35.9797,44.694688,
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Benthosema,,Otolith.5,1.84,34.4649,42.693776,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.5,2.44,45.8259,57.700616,
+,13,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Benthosema,,Otolith.5,2.32,43.5537,54.699248,
+,22 - D?,2011,6/10/11,South of Nolasco Island,33.5,NA,,NA,Benthosema,,Otolith.5,2.24,42.0389,52.698336,
+,25,2011,6/13/11,Tortuga,26.5,0.4,Male,2,Benthosema,,Otolith.5,1.92,35.9797,44.694688,
+,13,2011,6/14/11,San Carlos Bay,34,0.8,Male,3,Benthosema,,Otolith.5,1.96,36.7371,45.695144,
+,17,2011,6/14/11,San Carlos Bay,40,1.3,Male,5,Benthosema,,Otolith.5,1.88,35.2223,43.694232,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.5,1.88,35.2223,43.694232,
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Benthosema,,Otolith.5,2.24,42.0389,52.698336,
+,18,2011,6/18/11,Guaymas Basin,24,0.3,Female,2,Benthosema,,Otolith.5,2,37.4945,46.6956,
+,24,2011,6/18/11,Guaymas Basin,24,0.3,Male,3,Benthosema,,Otolith.5,2.24,42.0389,52.698336,
+,3,2011,6/20/11,Guaymas Basin,41.5,1.8,Female,5,Benthosema,,Otolith.5,2.04,38.2519,47.696056,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.5,1.76,32.9501,40.692864,
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Benthosema,,Otolith.5,2.28,42.7963,53.698792,
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Benthosema,,Otolith.6,1.96,36.7371,45.695144,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.6,2.04,38.2519,47.696056,
+,22 - D?,2011,6/10/11,South of Nolasco Island,33.5,NA,,NA,Benthosema,,Otolith.6,2.28,42.7963,53.698792,
+,25,2011,6/13/11,Tortuga,26.5,0.4,Male,2,Benthosema,,Otolith.6,1.96,36.7371,45.695144,
+,13,2011,6/14/11,San Carlos Bay,34,0.8,Male,3,Benthosema,,Otolith.6,1.72,32.1927,39.692408,
+,17,2011,6/14/11,San Carlos Bay,40,1.3,Male,5,Benthosema,,Otolith.6,2.08,39.0093,48.696512,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.6,2.16,40.5241,50.697424,
+,18,2011,6/18/11,Guaymas Basin,24,0.3,Female,2,Benthosema,,Otolith.6,2.4,45.0685,56.70016,
+,24,2011,6/18/11,Guaymas Basin,24,0.3,Male,3,Benthosema,,Otolith.6,1.92,35.9797,44.694688,
+,3,2011,6/20/11,Guaymas Basin,41.5,1.8,Female,5,Benthosema,,Otolith.6,2.08,39.0093,48.696512,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.6,1.52,28.4057,34.690128,
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Benthosema,,Otolith.6,2.08,39.0093,48.696512,
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Benthosema,,Otolith.7,2.12,39.7667,49.696968,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.7,2.2,41.2815,51.69788,
+,22 - D?,2011,6/10/11,South of Nolasco Island,33.5,NA,,NA,Benthosema,,Otolith.7,1.92,35.9797,44.694688,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.7,1.92,35.9797,44.694688,
+,24,2011,6/18/11,Guaymas Basin,24,0.3,Male,3,Benthosema,,Otolith.7,2,37.4945,46.6956,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.7,1.8,33.7075,41.69332,
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Benthosema,,Otolith.8,2,37.4945,46.6956,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.8,2.16,40.5241,50.697424,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.8,2.28,42.7963,53.698792,
+,24,2011,6/18/11,Guaymas Basin,24,0.3,Male,3,Benthosema,,Otolith.8,2.08,39.0093,48.696512,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.8,1.64,30.6779,37.691496,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.9,2.08,39.0093,48.696512,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.9,2,37.4945,46.6956,
+,24,2011,6/18/11,Guaymas Basin,24,0.3,Male,3,Benthosema,,Otolith.9,2.08,39.0093,48.696512,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.9,1.92,35.9797,44.694688,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.10,2.12,39.7667,49.696968,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.10,2,37.4945,46.6956,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.10,1.96,36.7371,45.695144,
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Benthosema,,Otolith.11,2.28,42.7963,53.698792,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.11,2.08,39.0093,48.696512,
+,30,2011,6/20/11,Guaymas Basin,48.5,3,Female,5,Benthosema,,Otolith.11,1.96,36.7371,45.695144,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.12,2.08,39.0093,48.696512,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.13,2.28,42.7963,53.698792,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.14,2,37.4945,46.6956,
+,11,2011,6/18/11,Guaymas Basin,37,1.1,Female,5,Benthosema,,Otolith.15,2.16,40.5241,50.697424,
+,4,2010,6/5/10,Guaymas Basin,27.5,0.4,F,4,Pterygioteuthis,,Otolith.1,0.5,,,22.78
+,8,2010,6/5/10,Guaymas Basin,32.5,0.65,F,5,Pterygioteuthis,,Otolith.1,0.5,,,22.78
+,9,2010,6/5/10,Guaymas Basin,30,0.63,F,5,Pterygioteuthis,URL,Otolith.1,0.4,,,18.892
+,15,2010,6/5/10,Guaymas Basin,27,0.35,F,2,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,22,2010,6/5/10,Guaymas Basin,31.5,0.65,F,5,Pterygioteuthis,,Otolith.1,0.3,,,16.148
+,23,2010,6/5/10,Guaymas Basin,29,0.43,M,5,Pterygioteuthis,,Otolith.1,0.3,,,16.148
+,25,2010,6/5/10,Guaymas Basin,33,0.85,F,3,Pterygioteuthis,,Otolith.1,0.3,,,16.148
+,11,2010,6/5/10,Rosalia - Marcos,20,0.17,M,2,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,12,2010,6/5/10,Rosalia - Marcos,22.5,0.21,F,2,Pterygioteuthis,,Otolith.1,0.3,,,16.148
+,13,2010,6/5/10,Rosalia - Marcos,22,0.25,F,2,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,16,2010,6/5/10,Rosalia - Marcos,28.5,0.44,M,5,Pterygioteuthis,,Otolith.1,0.45,,,21.122
+,17,2010,6/5/10,Rosalia - Marcos,24,0.25,F,2,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,2,2010,6/7/10,San Carlos Bay,28,0.5,M,5,Pterygioteuthis,,Otolith.1,0.35,,,17.806
+,3,2010,6/7/10,San Carlos Bay,29.5,0.59,F,2,Pterygioteuthis,,Otolith.1,0.35,,,17.806
+,5,2010,6/7/10,San Carlos Bay,30.5,0.65,M,1,Pterygioteuthis,,Otolith.1,0.35,,,17.806
+,6,2010,6/7/10,San Carlos Bay,31,0.7,F,2,Pterygioteuthis,,Otolith.1,0.3,,,16.148
+,7,2010,6/7/10,San Carlos Bay,29,0.59,F,2,Pterygioteuthis,,Otolith.1,0.3,,,16.148
+,15,2010,6/7/10,San Carlos Bay,32,0.75,F,2,Pterygioteuthis,,Otolith.1,0.25,,,14.49
+,17,2010,6/7/10,San Carlos Bay,34.5,0.94,F,2,Pterygioteuthis,URL,Otolith.1,0.35,,,17.443
+,20,2010,6/7/10,San Carlos Bay,31,0.67,M,2,Pterygioteuthis,,Otolith.1,0.3,,,16.148
+,21,2010,6/7/10,San Carlos Bay,31,0.66,M,2,Pterygioteuthis,,Otolith.1,0.25,,,14.49
+,2,2010,6/12/10,Guaymas Basin,29,0.5,F,3,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,5,2010,6/12/10,Guaymas Basin,35,0.94,F,5,Pterygioteuthis,,Otolith.1,0.5,,,22.78
+,14,2010,6/12/10,Guaymas Basin,33.5,0.64,F,5,Pterygioteuthis,URL,Otolith.1,0.35,,,17.443
+,15,2010,6/12/10,Guaymas Basin,16,0.1,F,1,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,16,2010,6/12/10,Guaymas Basin,22,1.8,F,2,Pterygioteuthis,URL,Otolith.1,0.45,,,20.341
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Pterygioteuthis,,Otolith.1,0.5,,,22.78
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Pterygioteuthis,,Otolith.1,0.3,,,16.148
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Pterygioteuthis,,Otolith.1,0.35,,,17.806
+,3,2010,6/14/10,Guaymas Basin,25.5,0.38,F,4,Pterygioteuthis,URL,Otolith.1,0.25,,,14.545
+,4,2010,6/14/10,Guaymas Basin,26.5,0.4,F,4,Pterygioteuthis,URL,Otolith.1,0.35,,,17.443
+,6,2010,6/14/10,Guaymas Basin,23.5,0.3,F,3,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,8,2010,6/14/10,Guaymas Basin,24,0.33,F,3,Pterygioteuthis,,Otolith.1,0.5,,,22.78
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.1,0.5,,,22.78
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,11,2010,6/14/10,Guaymas Basin,24,0.3,F,3,Pterygioteuthis,URL,Otolith.1,0.2,,,13.096
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.1,0.25,,,14.49
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Pterygioteuthis,,Otolith.1,0.3,,,16.148
+,16,2010,6/14/10,Guaymas Basin,22,0.24,M,5,Pterygioteuthis,,Otolith.1,0.3,,,16.148
+,17,2010,6/14/10,Guaymas Basin,24,0.3,F,2,Pterygioteuthis,,Otolith.1,0.25,,,14.49
+,18,2010,6/14/10,Guaymas Basin,22.5,0.24,F,2,Pterygioteuthis,,Otolith.1,0.25,,,14.49
+,5,2010,6/15/10,Rosalia - Marcos,24.5,0.35,F,2,Pterygioteuthis,,Otolith.1,0.5,,,22.78
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Pterygioteuthis,URL,Otolith.1,0.3,,,15.994
+,1,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.2,Female,5,Pterygioteuthis,URL,Otolith.1,0.44,,,20.0512
+,9,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.3,Female,5,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,14,2011,6/9/11,Outside of Guaymas Harbor,36,1,Female,4,Pterygioteuthis,,Otolith.1,0.6,,,26.096
+,1,2011,6/10/11,South of Nolasco Island,35.5,1,Female,5,Pterygioteuthis,URL,Otolith.1,0.4,,,18.892
+,6,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Pterygioteuthis,,Otolith.1,0.48,,,22.1168
+,11,2011,6/10/11,South of Nolasco Island,36,1,Male,5,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Pterygioteuthis,,Otolith.1,0.52,,,23.4432
+,13,2011,6/10/11,South of Nolasco Island,33,0.8,Female,5,Pterygioteuthis,URL,Otolith.1,0.44,,,20.0512
+,19,2011,6/10/11,South of Nolasco Island,41,1.4,Female,5,Pterygioteuthis,URL,Otolith.1,0.44,,,20.0512
+,22 - D?,2011,6/10/11,South of Nolasco Island,33.5,NA,,NA,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,1,2011,6/11/11,Guaymas Basin,32.5,0.7,Female,5,Pterygioteuthis,,Otolith.1,0.48,,,22.1168
+,22,2011,6/11/11,Guaymas Basin,23,0.3,Female,2,Pterygioteuthis,URL,Otolith.1,0.32,,,16.5736
+,25,2011,6/11/11,Guaymas Basin,18.5,0.2,Female,1,Pterygioteuthis,,Otolith.1,0.52,,,23.4432
+,27,2011,6/11/11,Guaymas Basin,27.5,0.5,Male,5,Pterygioteuthis,URL,Otolith.1,0.32,,,16.5736
+,31,2011,6/11/11,Guaymas Basin,24,0.3,Female,2,Pterygioteuthis,,Otolith.1,0.48,,,22.1168
+,8,2011,6/12/11,Rosalia - Marcos,27,0.4,Female,2,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,C,2011,6/12/11,Rosalia - Marcos,32.5,NA,Female,2,Pterygioteuthis,,Otolith.1,0.48,,,22.1168
+,18,2011,6/13/11,Tortuga,30.5,0.6,Female,2,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,20,2011,6/13/11,Tortuga,24.5,0.3,Female,2,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.1,0.48,,,22.1168
+,1,2011,6/14/11,San Carlos Bay,42,1.6,Female,5,Pterygioteuthis,,Otolith.1,0.36,,,18.1376
+,7,2011,6/14/11,San Carlos Bay,39.5,1.2,Male,5,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,13,2011,6/14/11,San Carlos Bay,34,0.8,Male,3,Pterygioteuthis,URL,Otolith.1,0.44,,,20.0512
+,17,2011,6/14/11,San Carlos Bay,40,1.3,Male,5,Pterygioteuthis,,Otolith.1,0.52,,,23.4432
+,4,2011,6/17/11,Guaymas Basin,24.5,0.3,Female,2,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,17,2011,6/17/11,Guaymas Basin,22.5,0.3,Male,5,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,19,2011,6/17/11,Guaymas Basin,23,0.2,Female,2,Pterygioteuthis,,Otolith.1,0.48,,,22.1168
+,21,2011,6/17/11,Guaymas Basin,27,0.4,Female,2,Pterygioteuthis,,Otolith.1,0.48,,,22.1168
+,25,2011,6/17/11,Guaymas Basin,24,0.3,Male,2,Pterygioteuthis,URL,Otolith.1,0.44,,,20.0512
+,28,2011,6/17/11,Guaymas Basin,28,0.5,Female,2,Pterygioteuthis,,Otolith.1,0.88,,,35.3808
+,29,2011,6/17/11,Guaymas Basin,24,0.4,Male,2,Pterygioteuthis,URL,Otolith.1,0.4,,,18.892
+,30,2011,6/17/11,Guaymas Basin,22,0.3,Female,2,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,2,2011,6/18/11,Guaymas Basin,36,1.1,Female,5,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,12,2011,6/18/11,Guaymas Basin,32.5,0.7,Female,5,Pterygioteuthis,URL,Otolith.1,0.36,,,17.7328
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Pterygioteuthis,,Otolith.1,0.52,,,23.4432
+,16,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,17,2011,6/18/11,Guaymas Basin,23.5,0.3,Female,2,Pterygioteuthis,,Otolith.1,0.52,,,23.4432
+,21,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Pterygioteuthis,URL,Otolith.1,0.52,,,22.3696
+,25,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,26,2011,6/18/11,Guaymas Basin,35.5,0.8,Female,5,Pterygioteuthis,,Otolith.1,0.48,,,22.1168
+,3,2011,6/19/11,Rosalia-Marcos,37,1,Female,3,Pterygioteuthis,URL,Otolith.1,0.48,,,21.2104
+,7,2011,6/19/11,Rosalia-Marcos,37,1,Female,3,Pterygioteuthis,URL,Otolith.1,0.44,,,20.0512
+,11,2011,6/19/11,Rosalia-Marcos,32.5,NA,,NA,Pterygioteuthis,,Otolith.1,0.56,,,24.7696
+,13,2011,6/19/11,Rosalia-Marcos,36.5,1.2,Female,5,Pterygioteuthis,URL,Otolith.1,0.36,,,17.7328
+,14,2011,6/19/11,Rosalia-Marcos,36.5,1,Male,5,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,4,2011,6/20/11,Guaymas Basin,36,1,Female,5,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,5,2011,6/20/11,Guaymas Basin,39,1.3,Female,5,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,7,2011,6/20/11,Guaymas Basin,39,1.3,Female,5,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,9,2011,6/20/11,Guaymas Basin,36.5,1.1,Female,5,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,13,2011,6/20/11,Guaymas Basin,33,0.7,Male,5,Pterygioteuthis,,Otolith.1,0.48,,,22.1168
+,16,2011,6/20/11,Guaymas Basin,33.5,0.9,Female,5,Pterygioteuthis,URL,Otolith.1,0.48,,,21.2104
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,25,2011,6/20/11,Guaymas Basin,40.5,1.5,Female,5,Pterygioteuthis,,Otolith.1,0.32,,,16.8112
+,29,2011,6/20/11,Guaymas Basin,36,1,Female,2,Pterygioteuthis,URL,Otolith.1,0.44,,,20.0512
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.1,0.52,,,23.4432
+,10,2011,6/21/11,Guaymas Basin,32.5,0.7,Female,5,Pterygioteuthis,,Otolith.1,0.44,,,20.7904
+,11,2011,6/21/11,Guaymas Basin,41,1.4,Female,5,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,12,2011,6/21/11,Guaymas Basin,34,0.9,Female,4,Pterygioteuthis,,Otolith.1,0.52,,,23.4432
+,14,2011,6/21/11,Guaymas Basin,37,1.1,Male,5,Pterygioteuthis,,Otolith.1,0.4,,,19.464
+,28,2011,6/21/11,Guaymas Basin,38.5,1.2,Female,5,Pterygioteuthis,URL,Otolith.1,0.44,,,20.0512
+,4,2010,6/5/10,Guaymas Basin,27.5,0.4,F,4,Pterygioteuthis,,Otolith.2,0.5,,,22.78
+,15,2010,6/5/10,Guaymas Basin,27,0.35,F,2,Pterygioteuthis,,Otolith.2,0.5,,,22.78
+,22,2010,6/5/10,Guaymas Basin,31.5,0.65,F,5,Pterygioteuthis,,Otolith.2,0.3,,,16.148
+,25,2010,6/5/10,Guaymas Basin,33,0.85,F,3,Pterygioteuthis,,Otolith.2,0.3,,,16.148
+,11,2010,6/5/10,Rosalia - Marcos,20,0.17,M,2,Pterygioteuthis,,Otolith.2,0.3,,,16.148
+,12,2010,6/5/10,Rosalia - Marcos,22.5,0.21,F,2,Pterygioteuthis,,Otolith.2,0.4,,,19.464
+,5,2010,6/7/10,San Carlos Bay,30.5,0.65,M,1,Pterygioteuthis,URL,Otolith.2,0.4,,,18.892
+,6,2010,6/7/10,San Carlos Bay,31,0.7,F,2,Pterygioteuthis,,Otolith.2,0.4,,,19.464
+,7,2010,6/7/10,San Carlos Bay,29,0.59,F,2,Pterygioteuthis,URL,Otolith.2,0.25,,,14.545
+,15,2010,6/7/10,San Carlos Bay,32,0.75,F,2,Pterygioteuthis,,Otolith.2,0.25,,,14.49
+,17,2010,6/7/10,San Carlos Bay,34.5,0.94,F,2,Pterygioteuthis,URL,Otolith.2,0.35,,,17.443
+,2,2010,6/12/10,Guaymas Basin,29,0.5,F,3,Pterygioteuthis,,Otolith.2,0.35,,,17.806
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Pterygioteuthis,,Otolith.2,0.35,,,17.806
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Pterygioteuthis,,Otolith.2,0.35,,,17.806
+,4,2010,6/14/10,Guaymas Basin,26.5,0.4,F,4,Pterygioteuthis,URL,Otolith.2,0.3,,,15.994
+,8,2010,6/14/10,Guaymas Basin,24,0.33,F,3,Pterygioteuthis,,Otolith.2,0.4,,,19.464
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.2,0.5,,,22.78
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.2,0.5,,,22.78
+,11,2010,6/14/10,Guaymas Basin,24,0.3,F,3,Pterygioteuthis,URL,Otolith.2,0.2,,,13.096
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.2,0.3,,,16.148
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Pterygioteuthis,,Otolith.2,0.35,,,17.806
+,16,2010,6/14/10,Guaymas Basin,22,0.24,M,5,Pterygioteuthis,,Otolith.2,0.3,,,16.148
+,18,2010,6/14/10,Guaymas Basin,22.5,0.24,F,2,Pterygioteuthis,,Otolith.2,0.25,,,14.49
+,5,2010,6/15/10,Rosalia - Marcos,24.5,0.35,F,2,Pterygioteuthis,,Otolith.2,0.45,,,21.122
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Pterygioteuthis,URL,Otolith.2,0.35,,,17.443
+,9,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.3,Female,5,Pterygioteuthis,,Otolith.2,0.44,,,20.7904
+,14,2011,6/9/11,Outside of Guaymas Harbor,36,1,Female,4,Pterygioteuthis,,Otolith.2,0.52,,,23.4432
+,1,2011,6/10/11,South of Nolasco Island,35.5,1,Female,5,Pterygioteuthis,URL,Otolith.2,0.44,,,20.0512
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Pterygioteuthis,,Otolith.2,0.48,,,22.1168
+,11,2011,6/10/11,South of Nolasco Island,36,1,Male,5,Pterygioteuthis,,Otolith.2,0.4,,,19.464
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Pterygioteuthis,,Otolith.2,0.48,,,21.2104
+,25,2011,6/11/11,Guaymas Basin,18.5,0.2,Female,1,Pterygioteuthis,,Otolith.2,0.52,,,23.4432
+,31,2011,6/11/11,Guaymas Basin,24,0.3,Female,2,Pterygioteuthis,,Otolith.2,0.32,,,16.8112
+,8,2011,6/12/11,Rosalia - Marcos,27,0.4,Female,2,Pterygioteuthis,,Otolith.2,0.48,,,22.1168
+,C,2011,6/12/11,Rosalia - Marcos,32.5,NA,Female,2,Pterygioteuthis,,Otolith.2,0.4,,,19.464
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.2,0.52,,,23.4432
+,17,2011,6/14/11,San Carlos Bay,40,1.3,Male,5,Pterygioteuthis,,Otolith.2,0.4,,,19.464
+,17,2011,6/17/11,Guaymas Basin,22.5,0.3,Male,5,Pterygioteuthis,URL,Otolith.2,0.4,,,18.892
+,19,2011,6/17/11,Guaymas Basin,23,0.2,Female,2,Pterygioteuthis,URL,Otolith.2,0.4,,,18.892
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Pterygioteuthis,,Otolith.2,0.44,,,20.7904
+,26,2011,6/18/11,Guaymas Basin,35.5,0.8,Female,5,Pterygioteuthis,,Otolith.2,0.4,,,19.464
+,3,2011,6/19/11,Rosalia-Marcos,37,1,Female,3,Pterygioteuthis,URL,Otolith.2,0.44,,,20.0512
+,4,2011,6/20/11,Guaymas Basin,36,1,Female,5,Pterygioteuthis,,Otolith.2,0.48,,,22.1168
+,9,2011,6/20/11,Guaymas Basin,36.5,1.1,Female,5,Pterygioteuthis,,Otolith.2,0.4,,,19.464
+,13,2011,6/20/11,Guaymas Basin,33,0.7,Male,5,Pterygioteuthis,,Otolith.2,0.4,,,19.464
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Pterygioteuthis,,Otolith.2,0.36,,,18.1376
+,29,2011,6/20/11,Guaymas Basin,36,1,Female,2,Pterygioteuthis,URL,Otolith.2,0.4,,,18.892
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.2,0.48,,,22.1168
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.2,0.44,,,20.7904
+,10,2011,6/21/11,Guaymas Basin,32.5,0.7,Female,5,Pterygioteuthis,,Otolith.2,0.44,,,20.7904
+,11,2011,6/21/11,Guaymas Basin,41,1.4,Female,5,Pterygioteuthis,,Otolith.2,0.44,,,20.7904
+,12,2011,6/21/11,Guaymas Basin,34,0.9,Female,4,Pterygioteuthis,,Otolith.2,0.48,,,22.1168
+,14,2011,6/21/11,Guaymas Basin,37,1.1,Male,5,Pterygioteuthis,,Otolith.2,0.4,,,19.464
+,4,2010,6/5/10,Guaymas Basin,27.5,0.4,F,4,Pterygioteuthis,,Otolith.3,0.55,,,24.438
+,15,2010,6/5/10,Guaymas Basin,27,0.35,F,2,Pterygioteuthis,,Otolith.3,0.45,,,21.122
+,22,2010,6/5/10,Guaymas Basin,31.5,0.65,F,5,Pterygioteuthis,,Otolith.3,0.4,,,19.464
+,25,2010,6/5/10,Guaymas Basin,33,0.85,F,3,Pterygioteuthis,,Otolith.3,0.3,,,16.148
+,12,2010,6/5/10,Rosalia - Marcos,22.5,0.21,F,2,Pterygioteuthis,,Otolith.3,0.4,,,19.464
+,5,2010,6/7/10,San Carlos Bay,30.5,0.65,M,1,Pterygioteuthis,URL,Otolith.3,0.3,,,15.994
+,6,2010,6/7/10,San Carlos Bay,31,0.7,F,2,Pterygioteuthis,,Otolith.3,0.4,,,19.464
+,7,2010,6/7/10,San Carlos Bay,29,0.59,F,2,Pterygioteuthis,URL,Otolith.3,0.3,,,15.994
+,2,2010,6/12/10,Guaymas Basin,29,0.5,F,3,Pterygioteuthis,,Otolith.3,0.8,,,32.728
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Pterygioteuthis,,Otolith.3,0.4,,,19.464
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Pterygioteuthis,,Otolith.3,0.4,,,19.464
+,8,2010,6/14/10,Guaymas Basin,24,0.33,F,3,Pterygioteuthis,URL,Otolith.3,0.25,,,14.545
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.3,0.5,,,22.78
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.3,0.5,,,22.78
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.3,0.35,,,17.806
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Pterygioteuthis,,Otolith.3,0.5,,,22.78
+,16,2010,6/14/10,Guaymas Basin,22,0.24,M,5,Pterygioteuthis,,Otolith.3,0.25,,,14.49
+,18,2010,6/14/10,Guaymas Basin,22.5,0.24,F,2,Pterygioteuthis,,Otolith.3,0.25,,,14.49
+,5,2010,6/15/10,Rosalia - Marcos,24.5,0.35,F,2,Pterygioteuthis,,Otolith.3,0.4,,,19.464
+,9,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.3,Female,5,Pterygioteuthis,,Otolith.3,0.4,,,19.464
+,14,2011,6/9/11,Outside of Guaymas Harbor,36,1,Female,4,Pterygioteuthis,,Otolith.3,0.52,,,23.4432
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Pterygioteuthis,,Otolith.3,0.48,,,22.1168
+,11,2011,6/10/11,South of Nolasco Island,36,1,Male,5,Pterygioteuthis,,Otolith.3,0.4,,,19.464
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Pterygioteuthis,URL,Otolith.3,0.48,,,21.2104
+,C,2011,6/12/11,Rosalia - Marcos,32.5,NA,Female,2,Pterygioteuthis,,Otolith.3,0.4,,,19.464
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.3,0.36,,,18.1376
+,17,2011,6/14/11,San Carlos Bay,40,1.3,Male,5,Pterygioteuthis,,Otolith.3,0.52,,,23.4432
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Pterygioteuthis,,Otolith.3,0.48,,,22.1168
+,26,2011,6/18/11,Guaymas Basin,35.5,0.8,Female,5,Pterygioteuthis,URL,Otolith.3,0.52,,,22.3696
+,3,2011,6/19/11,Rosalia-Marcos,37,1,Female,3,Pterygioteuthis,URL,Otolith.3,0.32,,,16.5736
+,4,2011,6/20/11,Guaymas Basin,36,1,Female,5,Pterygioteuthis,,Otolith.3,0.52,,,23.4432
+,9,2011,6/20/11,Guaymas Basin,36.5,1.1,Female,5,Pterygioteuthis,,Otolith.3,0.52,,,23.4432
+,13,2011,6/20/11,Guaymas Basin,33,0.7,Male,5,Pterygioteuthis,,Otolith.3,0.44,,,20.7904
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Pterygioteuthis,,Otolith.3,0.44,,,20.7904
+,29,2011,6/20/11,Guaymas Basin,36,1,Female,2,Pterygioteuthis,URL,Otolith.3,0.4,,,18.892
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.3,0.44,,,20.7904
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.3,0.36,,,18.1376
+,11,2011,6/21/11,Guaymas Basin,41,1.4,Female,5,Pterygioteuthis,,Otolith.3,0.44,,,20.7904
+,12,2011,6/21/11,Guaymas Basin,34,0.9,Female,4,Pterygioteuthis,,Otolith.3,0.52,,,23.4432
+,14,2011,6/21/11,Guaymas Basin,37,1.1,Male,5,Pterygioteuthis,,Otolith.3,0.44,,,20.7904
+,15,2010,6/5/10,Guaymas Basin,27,0.35,F,2,Pterygioteuthis,,Otolith.4,0.45,,,21.122
+,22,2010,6/5/10,Guaymas Basin,31.5,0.65,F,5,Pterygioteuthis,,Otolith.4,0.4,,,19.464
+,5,2010,6/7/10,San Carlos Bay,30.5,0.65,M,1,Pterygioteuthis,,Otolith.4,0.25,,,14.545
+,6,2010,6/7/10,San Carlos Bay,31,0.7,F,2,Pterygioteuthis,,Otolith.4,0.25,,,14.49
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Pterygioteuthis,,Otolith.4,0.35,,,17.806
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.4,0.5,,,22.78
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.4,0.4,,,19.464
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.4,0.25,,,14.49
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Pterygioteuthis,,Otolith.4,0.4,,,19.464
+,16,2010,6/14/10,Guaymas Basin,22,0.24,M,5,Pterygioteuthis,,Otolith.4,0.3,,,16.148
+,18,2010,6/14/10,Guaymas Basin,22.5,0.24,F,2,Pterygioteuthis,,Otolith.4,0.2,,,12.832
+,9,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.3,Female,5,Pterygioteuthis,,Otolith.4,0.44,,,20.7904
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Pterygioteuthis,,Otolith.4,0.44,,,20.7904
+,12,2011,6/10/11,South of Nolasco Island,34,1,Female,5,Pterygioteuthis,URL,Otolith.4,0.44,,,20.0512
+,C,2011,6/12/11,Rosalia - Marcos,32.5,NA,Female,2,Pterygioteuthis,,Otolith.4,0.4,,,19.464
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.4,0.4,,,19.464
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Pterygioteuthis,,Otolith.4,0.4,,,19.464
+,9,2011,6/20/11,Guaymas Basin,36.5,1.1,Female,5,Pterygioteuthis,,Otolith.4,0.52,,,23.4432
+,13,2011,6/20/11,Guaymas Basin,33,0.7,Male,5,Pterygioteuthis,,Otolith.4,0.44,,,20.7904
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Pterygioteuthis,,Otolith.4,0.4,,,19.464
+,29,2011,6/20/11,Guaymas Basin,36,1,Female,2,Pterygioteuthis,URL,Otolith.4,0.36,,,17.7328
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.4,0.48,,,22.1168
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.4,0.4,,,19.464
+,14,2011,6/21/11,Guaymas Basin,37,1.1,Male,5,Pterygioteuthis,,Otolith.4,0.4,,,19.464
+,15,2010,6/5/10,Guaymas Basin,27,0.35,F,2,Pterygioteuthis,,Otolith.5,0.5,,,22.78
+,22,2010,6/5/10,Guaymas Basin,31.5,0.65,F,5,Pterygioteuthis,,Otolith.5,0.4,,,19.464
+,5,2010,6/7/10,San Carlos Bay,30.5,0.65,M,1,Pterygioteuthis,URL,Otolith.5,0.3,,,15.994
+,6,2010,6/7/10,San Carlos Bay,31,0.7,F,2,Pterygioteuthis,,Otolith.5,0.3,,,16.148
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Pterygioteuthis,,Otolith.5,0.4,,,19.464
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.5,0.45,,,21.122
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.5,0.3,,,16.148
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.5,0.25,,,14.49
+,9,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.3,Female,5,Pterygioteuthis,,Otolith.5,0.44,,,20.7904
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Pterygioteuthis,,Otolith.5,0.4,,,19.464
+,C,2011,6/12/11,Rosalia - Marcos,32.5,NA,Female,2,Pterygioteuthis,,Otolith.5,0.56,,,24.7696
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.5,0.44,,,20.7904
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Pterygioteuthis,,Otolith.5,0.44,,,20.7904
+,9,2011,6/20/11,Guaymas Basin,36.5,1.1,Female,5,Pterygioteuthis,,Otolith.5,0.4,,,19.464
+,13,2011,6/20/11,Guaymas Basin,33,0.7,Male,5,Pterygioteuthis,,Otolith.5,0.44,,,20.7904
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Pterygioteuthis,,Otolith.5,0.4,,,19.464
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.5,0.4,,,19.464
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.5,0.56,,,24.7696
+,6,2010,6/7/10,San Carlos Bay,31,0.7,F,2,Pterygioteuthis,,Otolith.6,0.3,,,16.148
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Pterygioteuthis,,Otolith.6,0.35,,,17.806
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.6,0.4,,,19.464
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.6,0.3,,,16.148
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.6,0.25,,,14.49
+,8,2011,6/10/11,South of Nolasco Island,32,0.7,Male,5,Pterygioteuthis,,Otolith.6,0.4,,,19.464
+,C,2011,6/12/11,Rosalia - Marcos,32.5,NA,Female,2,Pterygioteuthis,,Otolith.6,0.44,,,20.7904
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.6,0.6,,,26.096
+,9,2011,6/20/11,Guaymas Basin,36.5,1.1,Female,5,Pterygioteuthis,,Otolith.6,0.48,,,22.1168
+,13,2011,6/20/11,Guaymas Basin,33,0.7,Male,5,Pterygioteuthis,,Otolith.6,0.4,,,19.464
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Pterygioteuthis,,Otolith.6,0.44,,,20.7904
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.6,0.48,,,22.1168
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.6,0.44,,,20.7904
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Pterygioteuthis,,Otolith.7,0.5,,,22.78
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.7,0.4,,,19.464
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.7,0.35,,,17.806
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.7,0.25,,,14.49
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.7,0.56,,,24.7696
+,13,2011,6/20/11,Guaymas Basin,33,0.7,Male,5,Pterygioteuthis,,Otolith.7,0.4,,,19.464
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Pterygioteuthis,,Otolith.7,0.52,,,23.4432
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.7,0.48,,,22.1168
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.7,0.32,,,16.8112
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Pterygioteuthis,,Otolith.8,0.35,,,17.806
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.8,0.4,,,19.464
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.8,0.4,,,19.464
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.8,0.4,,,19.464
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.8,0.52,,,23.4432
+,13,2011,6/20/11,Guaymas Basin,33,0.7,Male,5,Pterygioteuthis,,Otolith.8,0.44,,,20.7904
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.8,0.52,,,23.4432
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.8,0.44,,,20.7904
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Pterygioteuthis,,Otolith.9,0.35,,,17.806
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.9,0.2,,,12.832
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.9,0.3,,,16.148
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.9,0.3,,,16.148
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.9,0.52,,,23.4432
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.9,0.48,,,22.1168
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.9,0.48,,,22.1168
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Pterygioteuthis,,Otolith.10,0.3,,,16.148
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.10,0.3,,,16.148
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.10,0.25,,,14.49
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.10,0.35,,,17.806
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.10,0.48,,,22.1168
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.10,0.44,,,20.7904
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.10,0.48,,,22.1168
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.11,0.3,,,16.148
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.11,0.3,,,16.148
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.11,0.4,,,19.464
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.11,0.4,,,19.464
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.11,0.56,,,24.7696
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.11,0.4,,,19.464
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.12,0.25,,,14.49
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.12,0.25,,,14.49
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.12,0.4,,,19.464
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.12,0.52,,,23.4432
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.12,0.44,,,20.7904
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.12,0.48,,,22.1168
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Pterygioteuthis,,Otolith.13,0.4,,,19.464
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Pterygioteuthis,,Otolith.13,0.3,,,16.148
+,14,2010,6/14/10,Guaymas Basin,26,0.38,F,2,Pterygioteuthis,,Otolith.13,0.35,,,17.806
+,26,2011,6/13/11,Tortuga,35,0.8,Male,5,Pterygioteuthis,,Otolith.13,0.44,,,20.7904
+,2,2011,6/21/11,Guaymas Basin,39,1.2,Female,5,Pterygioteuthis,,Otolith.13,0.32,,,16.8112
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Pterygioteuthis,,Otolith.13,0.36,,,18.1376
+,2,2010,6/5/10,Guaymas Basin,29,0.5,F,3,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,5,2010,6/5/10,Guaymas Basin,34.5,0.8,F,5,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,9,2010,6/5/10,Guaymas Basin,30,0.63,F,5,Triphoturus,,Otolith.1,0.95,41.1404,52.50211,
+,11,2010,6/5/10,Guaymas Basin,28.5,0.5,F,2,Triphoturus,,Otolith.1,0.8,36.8621,46.58584,
+,23,2010,6/5/10,Guaymas Basin,29,0.43,M,5,Triphoturus,,Otolith.1,0.5,28.3055,34.7533,
+,25,2010,6/5/10,Guaymas Basin,33,0.85,F,3,Triphoturus,,Otolith.1,0.5,28.3055,34.7533,
+,1-5?,2010,6/5/10,Guaymas Basin,21.5,0.28,F,2,Triphoturus,,Otolith.1,0.9,39.7143,50.53002,
+,,2010,6/5/10,Guaymas Basin,20.5,0.13,F,2,Triphoturus,,Otolith.1,1.1,45.4187,58.41838,
+,5,2010,6/5/10,Rosalia - Marcos,23,0.24,F,2,Triphoturus,,Otolith.1,0.8,36.8621,46.58584,
+,10,2010,6/5/10,Rosalia - Marcos,23.5,0.25,M,3,Triphoturus,,Otolith.1,0.85,38.2882,48.55793,
+,15,2010,6/5/10,Rosalia - Marcos,21.5,0.16,F,2,Triphoturus,,Otolith.1,0.8,36.8621,46.58584,
+,16,2010,6/5/10,Rosalia - Marcos,28.5,0.44,M,5,Triphoturus,,Otolith.1,0.65,32.5838,40.66957,
+,17,2010,6/5/10,Rosalia - Marcos,24,0.25,F,2,Triphoturus,,Otolith.1,1.05,43.9926,56.44629,
+,5,2010,6/7/10,San Carlos Bay,30.5,0.65,M,1,Triphoturus,,Otolith.1,0.8,36.8621,46.58584,
+,15,2010,6/7/10,San Carlos Bay,32,0.75,F,2,Triphoturus,,Otolith.1,0.3,22.6011,26.86494,
+,16,2010,6/7/10,San Carlos Bay,30,0.63,F,2,Triphoturus,,Otolith.1,0.4,25.4533,30.80912,
+,20,2010,6/7/10,San Carlos Bay,31,0.67,M,2,Triphoturus,,Otolith.1,0.35,24.0272,28.83703,
+,10,2010,6/8/10,San Raphael,57.5,5.9,F,2,Triphoturus,,Otolith.1,0.6,31.1577,38.69748,
+,2,2010,6/12/10,Guaymas Basin,29,0.5,F,3,Triphoturus,,Otolith.1,0.8,36.8621,46.58584,
+,4,2010,6/12/10,Guaymas Basin,26,0.38,F,3,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,5,2010,6/12/10,Guaymas Basin,35,0.94,F,5,Triphoturus,,Otolith.1,0.7,34.0099,42.64166,
+,14,2010,6/12/10,Guaymas Basin,33.5,0.64,F,5,Triphoturus,,Otolith.1,0.9,39.7143,50.53002,
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,19,2010,6/12/10,Guaymas Basin,19.5,0.18,F,2,Triphoturus,,Otolith.1,0.7,34.0099,42.64166,
+,22,2010,6/12/10,Guaymas Basin,24,0.29,F,2,Triphoturus,,Otolith.1,0.6,31.1577,38.69748,
+,23,2010,6/12/10,Guaymas Basin,31,0.63,F,5,Triphoturus,,Otolith.1,0.9,39.7143,50.53002,
+,3,2010,6/14/10,Guaymas Basin,25.5,0.38,F,4,Triphoturus,,Otolith.1,0.8,36.8621,46.58584,
+,4,2010,6/14/10,Guaymas Basin,26.5,0.4,F,4,Triphoturus,,Otolith.1,0.9,39.7143,50.53002,
+,8,2010,6/14/10,Guaymas Basin,24,0.33,F,3,Triphoturus,,Otolith.1,0.95,41.1404,52.50211,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.1,0.85,38.2882,48.55793,
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Triphoturus,,Otolith.1,0.95,41.1404,52.50211,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.1,1.2,48.2709,62.36256,
+,19,2010,6/14/10,Guaymas Basin,24,0.29,F,2,Triphoturus,,Otolith.1,0.9,39.7143,50.53002,
+,5,2010,6/15/10,Rosalia - Marcos,24.5,0.35,F,2,Triphoturus,,Otolith.1,0.7,34.0099,42.64166,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.1,0.95,41.1404,52.50211,
+,1,2011,6/9/11,Outside of Guaymas Harbor,38.5,1.2,Female,5,Triphoturus,,Otolith.1,1.24,49.41178,63.940232,
+,16,2011,6/9/11,Outside of Guaymas Harbor,30,NA,Female,5,Triphoturus,,Otolith.1,0.92,40.28474,51.318856,
+,17,2011,6/9/11,Outside of Guaymas Harbor,42.5,1.9,Female,5,Triphoturus,,Otolith.1,0.92,40.28474,51.318856,
+,19,2011,6/9/11,Outside of Guaymas Harbor,33.5,0.8,Female,5,Triphoturus,,Otolith.1,0.92,40.28474,51.318856,
+,1,2011,6/10/11,South of Nolasco Island,35.5,1,Female,5,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,5,2011,6/10/11,South of Nolasco Island,36,1,Female,3,Triphoturus,,Otolith.1,0.76,35.72122,45.008168,
+,11,2011,6/10/11,South of Nolasco Island,36,1,Male,5,Triphoturus,,Otolith.1,0.96,41.42562,52.896528,
+,19,2011,6/10/11,South of Nolasco Island,41,1.4,Female,5,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.1,0.88,39.14386,49.741184,
+,27,2011,6/11/11,Guaymas Basin,27.5,0.5,Male,5,Triphoturus,,Otolith.1,0.72,34.58034,43.430496,
+,6,2011,6/12/11,Rosalia - Marcos,31.5,0.7,Male,5,Triphoturus,,Otolith.1,1.12,45.98914,59.207216,
+,9,2011,6/12/11,Rosalia - Marcos,30,0.6,Male,3,Triphoturus,,Otolith.1,0.92,40.28474,51.318856,
+,44,2011,6/12/11,Rosalia - Marcos,34.5,1,Female,2,Triphoturus,,Otolith.1,0.8,36.8621,46.58584,
+,C,2011,6/12/11,Rosalia - Marcos,32.5,NA,Female,2,Triphoturus,,Otolith.1,0.88,39.14386,49.741184,
+,5,2011,6/13/11,Tortuga,35,0.9,Female,5,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,17,2011,6/13/11,Tortuga,24,0.3,Female,2,Triphoturus,,Otolith.1,0.92,40.28474,51.318856,
+,19,2011,6/13/11,Tortuga,30.5,0.6,Female,2,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,23,2011,6/13/11,Tortuga,29.5,0.5,Male,5,Triphoturus,,Otolith.1,0.76,35.72122,45.008168,
+,25,2011,6/13/11,Tortuga,26.5,0.4,Male,2,Triphoturus,,Otolith.1,0.72,34.58034,43.430496,
+,3,2011,6/14/11,San Carlos Bay,36.5,1,Female,2,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,11,2011,6/14/11,San Carlos Bay,43.5,1.8,Male,5,Triphoturus,,Otolith.1,0.92,40.28474,51.318856,
+,13,2011,6/14/11,San Carlos Bay,34,0.8,Male,3,Triphoturus,,Otolith.1,0.92,40.28474,51.318856,
+,11,2011,6/15/11,San Raphael,36.5,1.1,Male,3,Triphoturus,,Otolith.1,1.04,43.70738,56.051872,
+,10,2011,6/17/11,Guaymas Basin,23,0.3,Female,2,Triphoturus,,Otolith.1,0.68,33.43946,41.852824,
+,28,2011,6/17/11,Guaymas Basin,28,0.5,Female,2,Triphoturus,,Otolith.1,0.48,27.73506,33.964464,
+,7,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Triphoturus,,Otolith.1,0.8,36.8621,46.58584,
+,14,2011,6/18/11,Guaymas Basin,31,0.7,Female,2,Triphoturus,,Otolith.1,0.92,40.28474,51.318856,
+,16,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,18,2011,6/18/11,Guaymas Basin,24,0.3,Female,2,Triphoturus,,Otolith.1,0.76,35.72122,45.008168,
+,25,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Triphoturus,,Otolith.1,0.72,34.58034,43.430496,
+,2,2011,6/19/11,Rosalia-Marcos,37.5,1.3,Female,3,Triphoturus,,Otolith.1,0.84,38.00298,48.163512,
+,4,2011,6/19/11,Rosalia-Marcos,36,1,Female,4,Triphoturus,,Otolith.1,1.24,49.41178,63.940232,
+,6,2011,6/19/11,Rosalia-Marcos,38,1.1,Male,3,Triphoturus,,Otolith.1,0.84,38.00298,48.163512,
+,19,2011,6/19/11,Rosalia-Marcos,37.5,1.2,Female,3,Triphoturus,,Otolith.1,0.76,35.72122,45.008168,
+,23,2011,6/19/11,Rosalia-Marcos,42,1.6,Male,5,Triphoturus,,Otolith.1,0.72,34.58034,43.430496,
+,4,2011,6/20/11,Guaymas Basin,36,1,Female,5,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,5,2011,6/20/11,Guaymas Basin,39,1.3,Female,5,Triphoturus,,Otolith.1,0.92,40.28474,51.318856,
+,7,2011,6/20/11,Guaymas Basin,39,1.3,Female,5,Triphoturus,,Otolith.1,0.84,38.00298,48.163512,
+,9,2011,6/20/11,Guaymas Basin,36.5,1.1,Female,5,Triphoturus,,Otolith.1,0.88,39.14386,49.741184,
+,11,2011,6/20/11,Guaymas Basin,37.5,1.1,Male,5,Triphoturus,,Otolith.1,0.92,40.28474,51.318856,
+,13,2011,6/20/11,Guaymas Basin,33,0.7,Male,5,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Triphoturus,,Otolith.1,0.96,41.42562,52.896528,
+,18,2011,6/20/11,Guaymas Basin,35,0.9,Female,4,Triphoturus,,Otolith.1,1.04,43.70738,56.051872,
+,21,2011,6/20/11,Guaymas Basin,39,1.3,Female,3,Triphoturus,,Otolith.1,0.88,39.14386,49.741184,
+,24,2011,6/20/11,Guaymas Basin,35,0.9,Female,5,Triphoturus,,Otolith.1,0.76,35.72122,45.008168,
+,25,2011,6/20/11,Guaymas Basin,40.5,1.5,Female,5,Triphoturus,,Otolith.1,1.12,45.98914,59.207216,
+,6,2011,6/21/11,Guaymas Basin,35.5,1,Female,5,Triphoturus,,Otolith.1,0.88,39.14386,49.741184,
+,10,2011,6/21/11,Guaymas Basin,32.5,0.7,Female,5,Triphoturus,,Otolith.1,1,42.5665,54.4742,
+,9,2010,6/5/10,Guaymas Basin,30,0.63,F,5,Triphoturus,,Otolith.2,1,42.5665,54.4742,
+,23,2010,6/5/10,Guaymas Basin,29,0.43,M,5,Triphoturus,,Otolith.2,0.4,25.4533,30.80912,
+,,2010,6/5/10,Guaymas Basin,20.5,0.13,F,2,Triphoturus,,Otolith.2,1,42.5665,54.4742,
+,5,2010,6/5/10,Rosalia - Marcos,23,0.24,F,2,Triphoturus,,Otolith.2,0.7,34.0099,42.64166,
+,15,2010,6/5/10,Rosalia - Marcos,21.5,0.16,F,2,Triphoturus,,Otolith.2,0.9,39.7143,50.53002,
+,17,2010,6/5/10,Rosalia - Marcos,24,0.25,F,2,Triphoturus,,Otolith.2,1.05,43.9926,56.44629,
+,5,2010,6/7/10,San Carlos Bay,30.5,0.65,M,1,Triphoturus,,Otolith.2,0.5,28.3055,34.7533,
+,15,2010,6/7/10,San Carlos Bay,32,0.75,F,2,Triphoturus,,Otolith.2,0.4,25.4533,30.80912,
+,2,2010,6/12/10,Guaymas Basin,29,0.5,F,3,Triphoturus,,Otolith.2,1.1,45.4187,58.41838,
+,4,2010,6/12/10,Guaymas Basin,26,0.38,F,3,Triphoturus,,Otolith.2,1.2,48.2709,62.36256,
+,5,2010,6/12/10,Guaymas Basin,35,0.94,F,5,Triphoturus,,Otolith.2,0.7,34.0099,42.64166,
+,14,2010,6/12/10,Guaymas Basin,33.5,0.64,F,5,Triphoturus,,Otolith.2,1.1,45.4187,58.41838,
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Triphoturus,,Otolith.2,0.95,41.1404,52.50211,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.2,0.8,36.8621,46.58584,
+,22,2010,6/12/10,Guaymas Basin,24,0.29,F,2,Triphoturus,,Otolith.2,0.5,28.3055,34.7533,
+,4,2010,6/14/10,Guaymas Basin,26.5,0.4,F,4,Triphoturus,,Otolith.2,0.85,38.2882,48.55793,
+,8,2010,6/14/10,Guaymas Basin,24,0.33,F,3,Triphoturus,,Otolith.2,1.1,45.4187,58.41838,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.2,1.05,43.9926,56.44629,
+,10,2010,6/14/10,Guaymas Basin,29,0.48,M,5,Triphoturus,,Otolith.2,1.05,43.9926,56.44629,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.2,0.9,39.7143,50.53002,
+,5,2010,6/15/10,Rosalia - Marcos,24.5,0.35,F,2,Triphoturus,,Otolith.2,0.9,39.7143,50.53002,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.2,0.95,41.1404,52.50211,
+,19,2011,6/9/11,Outside of Guaymas Harbor,33.5,0.8,Female,5,Triphoturus,,Otolith.2,1.16,47.13002,60.784888,
+,11,2011,6/10/11,South of Nolasco Island,36,1,Male,5,Triphoturus,,Otolith.2,0.72,34.58034,43.430496,
+,19,2011,6/10/11,South of Nolasco Island,41,1.4,Female,5,Triphoturus,,Otolith.2,1.04,43.70738,56.051872,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.2,0.72,34.58034,43.430496,
+,9,2011,6/12/11,Rosalia - Marcos,30,0.6,Male,3,Triphoturus,,Otolith.2,1.12,45.98914,59.207216,
+,17,2011,6/13/11,Tortuga,24,0.3,Female,2,Triphoturus,,Otolith.2,0.56,30.01682,37.119808,
+,11,2011,6/14/11,San Carlos Bay,43.5,1.8,Male,5,Triphoturus,,Otolith.2,0.84,38.00298,48.163512,
+,10,2011,6/17/11,Guaymas Basin,23,0.3,Female,2,Triphoturus,,Otolith.2,0.8,36.8621,46.58584,
+,16,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Triphoturus,,Otolith.2,0.8,36.8621,46.58584,
+,2,2011,6/19/11,Rosalia-Marcos,37.5,1.3,Female,3,Triphoturus,,Otolith.2,0.88,39.14386,49.741184,
+,6,2011,6/19/11,Rosalia-Marcos,38,1.1,Male,3,Triphoturus,,Otolith.2,0.84,38.00298,48.163512,
+,4,2011,6/20/11,Guaymas Basin,36,1,Female,5,Triphoturus,,Otolith.2,0.96,41.42562,52.896528,
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Triphoturus,,Otolith.2,1.04,43.70738,56.051872,
+,21,2011,6/20/11,Guaymas Basin,39,1.3,Female,3,Triphoturus,,Otolith.2,0.76,35.72122,45.008168,
+,25,2011,6/20/11,Guaymas Basin,40.5,1.5,Female,5,Triphoturus,,Otolith.2,0.88,39.14386,49.741184,
+,,2010,6/5/10,Guaymas Basin,20.5,0.13,F,2,Triphoturus,,Otolith.3,0.35,24.0272,28.83703,
+,5,2010,6/5/10,Rosalia - Marcos,23,0.24,F,2,Triphoturus,,Otolith.3,0.9,39.7143,50.53002,
+,15,2010,6/5/10,Rosalia - Marcos,21.5,0.16,F,2,Triphoturus,,Otolith.3,0.9,39.7143,50.53002,
+,17,2010,6/5/10,Rosalia - Marcos,24,0.25,F,2,Triphoturus,,Otolith.3,0.9,39.7143,50.53002,
+,5,2010,6/7/10,San Carlos Bay,30.5,0.65,M,1,Triphoturus,,Otolith.3,0.3,22.6011,26.86494,
+,2,2010,6/12/10,Guaymas Basin,29,0.5,F,3,Triphoturus,,Otolith.3,0.7,34.0099,42.64166,
+,5,2010,6/12/10,Guaymas Basin,35,0.94,F,5,Triphoturus,,Otolith.3,1.05,43.9926,56.44629,
+,14,2010,6/12/10,Guaymas Basin,33.5,0.64,F,5,Triphoturus,,Otolith.3,0.9,39.7143,50.53002,
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Triphoturus,,Otolith.3,0.75,35.436,44.61375,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.3,0.95,41.1404,52.50211,
+,22,2010,6/12/10,Guaymas Basin,24,0.29,F,2,Triphoturus,,Otolith.3,0.5,28.3055,34.7533,
+,4,2010,6/14/10,Guaymas Basin,26.5,0.4,F,4,Triphoturus,,Otolith.3,1.05,43.9926,56.44629,
+,8,2010,6/14/10,Guaymas Basin,24,0.33,F,3,Triphoturus,,Otolith.3,0.6,31.1577,38.69748,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.3,1,42.5665,54.4742,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.3,0.9,39.7143,50.53002,
+,5,2010,6/15/10,Rosalia - Marcos,24.5,0.35,F,2,Triphoturus,,Otolith.3,0.65,32.5838,40.66957,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.3,0.95,41.1404,52.50211,
+,19,2011,6/10/11,South of Nolasco Island,41,1.4,Female,5,Triphoturus,,Otolith.3,0.96,41.42562,52.896528,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.3,0.64,32.29858,40.275152,
+,9,2011,6/12/11,Rosalia - Marcos,30,0.6,Male,3,Triphoturus,,Otolith.3,1,42.5665,54.4742,
+,16,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Triphoturus,,Otolith.3,0.88,39.14386,49.741184,
+,6,2011,6/19/11,Rosalia-Marcos,38,1.1,Male,3,Triphoturus,,Otolith.3,0.76,35.72122,45.008168,
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Triphoturus,,Otolith.3,1,42.5665,54.4742,
+,21,2011,6/20/11,Guaymas Basin,39,1.3,Female,3,Triphoturus,,Otolith.3,1,42.5665,54.4742,
+,5,2010,6/5/10,Rosalia - Marcos,23,0.24,F,2,Triphoturus,,Otolith.4,0.9,39.7143,50.53002,
+,15,2010,6/5/10,Rosalia - Marcos,21.5,0.16,F,2,Triphoturus,,Otolith.4,0.9,39.7143,50.53002,
+,17,2010,6/5/10,Rosalia - Marcos,24,0.25,F,2,Triphoturus,,Otolith.4,0.95,41.1404,52.50211,
+,2,2010,6/12/10,Guaymas Basin,29,0.5,F,3,Triphoturus,,Otolith.4,1,42.5665,54.4742,
+,5,2010,6/12/10,Guaymas Basin,35,0.94,F,5,Triphoturus,,Otolith.4,1,42.5665,54.4742,
+,14,2010,6/12/10,Guaymas Basin,33.5,0.64,F,5,Triphoturus,,Otolith.4,1,42.5665,54.4742,
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Triphoturus,,Otolith.4,0.95,41.1404,52.50211,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.4,0.8,36.8621,46.58584,
+,22,2010,6/12/10,Guaymas Basin,24,0.29,F,2,Triphoturus,,Otolith.4,0.5,28.3055,34.7533,
+,4,2010,6/14/10,Guaymas Basin,26.5,0.4,F,4,Triphoturus,,Otolith.4,0.95,41.1404,52.50211,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.4,0.9,39.7143,50.53002,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.4,0.85,38.2882,48.55793,
+,5,2010,6/15/10,Rosalia - Marcos,24.5,0.35,F,2,Triphoturus,,Otolith.4,0.7,34.0099,42.64166,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.4,0.9,39.7143,50.53002,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.4,0.84,38.00298,48.163512,
+,9,2011,6/12/11,Rosalia - Marcos,30,0.6,Male,3,Triphoturus,,Otolith.4,1.04,43.70738,56.051872,
+,16,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Triphoturus,,Otolith.4,0.72,34.58034,43.430496,
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Triphoturus,,Otolith.4,0.88,39.14386,49.741184,
+,21,2011,6/20/11,Guaymas Basin,39,1.3,Female,3,Triphoturus,,Otolith.4,0.88,39.14386,49.741184,
+,15,2010,6/5/10,Rosalia - Marcos,21.5,0.16,F,2,Triphoturus,,Otolith.5,1.1,45.4187,58.41838,
+,5,2010,6/12/10,Guaymas Basin,35,0.94,F,5,Triphoturus,,Otolith.5,1.1,45.4187,58.41838,
+,14,2010,6/12/10,Guaymas Basin,33.5,0.64,F,5,Triphoturus,,Otolith.5,0.9,39.7143,50.53002,
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Triphoturus,,Otolith.5,0.7,34.0099,42.64166,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.5,0.8,36.8621,46.58584,
+,22,2010,6/12/10,Guaymas Basin,24,0.29,F,2,Triphoturus,,Otolith.5,0.55,29.7316,36.72539,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.5,0.95,41.1404,52.50211,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.5,0.9,39.7143,50.53002,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.5,0.95,41.1404,52.50211,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.5,0.68,33.43946,41.852824,
+,9,2011,6/12/11,Rosalia - Marcos,30,0.6,Male,3,Triphoturus,,Otolith.5,1.08,44.84826,57.629544,
+,16,2011,6/18/11,Guaymas Basin,34.5,0.9,Female,5,Triphoturus,,Otolith.5,1.36,52.83442,68.673248,
+,17,2011,6/20/11,Guaymas Basin,40.5,1.4,Female,5,Triphoturus,,Otolith.5,1.16,47.13002,60.784888,
+,15,2010,6/5/10,Rosalia - Marcos,21.5,0.16,F,2,Triphoturus,,Otolith.6,1,42.5665,54.4742,
+,5,2010,6/12/10,Guaymas Basin,35,0.94,F,5,Triphoturus,,Otolith.6,1.05,43.9926,56.44629,
+,14,2010,6/12/10,Guaymas Basin,33.5,0.64,F,5,Triphoturus,,Otolith.6,1,42.5665,54.4742,
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Triphoturus,,Otolith.6,1.05,43.9926,56.44629,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.6,0.9,39.7143,50.53002,
+,22,2010,6/12/10,Guaymas Basin,24,0.29,F,2,Triphoturus,,Otolith.6,0.4,25.4533,30.80912,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.6,0.8,36.8621,46.58584,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.6,0.9,39.7143,50.53002,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.6,0.95,41.1404,52.50211,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.6,0.96,41.42562,52.896528,
+,9,2011,6/12/11,Rosalia - Marcos,30,0.6,Male,3,Triphoturus,,Otolith.6,1.12,45.98914,59.207216,
+,5,2010,6/12/10,Guaymas Basin,35,0.94,F,5,Triphoturus,,Otolith.7,1.2,48.2709,62.36256,
+,14,2010,6/12/10,Guaymas Basin,33.5,0.64,F,5,Triphoturus,,Otolith.7,0.8,36.8621,46.58584,
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Triphoturus,,Otolith.7,0.9,39.7143,50.53002,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.7,0.9,39.7143,50.53002,
+,22,2010,6/12/10,Guaymas Basin,24,0.29,F,2,Triphoturus,,Otolith.7,0.45,26.8794,32.78121,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.7,1,42.5665,54.4742,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.7,0.85,38.2882,48.55793,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.7,0.75,35.436,44.61375,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.7,0.64,32.29858,40.275152,
+,9,2011,6/12/11,Rosalia - Marcos,30,0.6,Male,3,Triphoturus,,Otolith.7,0.88,39.14386,49.741184,
+,14,2010,6/12/10,Guaymas Basin,33.5,0.64,F,5,Triphoturus,,Otolith.8,0.8,36.8621,46.58584,
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Triphoturus,,Otolith.8,0.95,41.1404,52.50211,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.8,0.95,41.1404,52.50211,
+,22,2010,6/12/10,Guaymas Basin,24,0.29,F,2,Triphoturus,,Otolith.8,0.45,26.8794,32.78121,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.8,1.05,43.9926,56.44629,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.8,1,42.5665,54.4742,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.8,0.95,41.1404,52.50211,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.8,0.88,39.14386,49.741184,
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Triphoturus,,Otolith.9,0.65,32.5838,40.66957,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.9,0.8,36.8621,46.58584,
+,22,2010,6/12/10,Guaymas Basin,24,0.29,F,2,Triphoturus,,Otolith.9,0.45,26.8794,32.78121,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.9,1,42.5665,54.4742,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.9,1.05,43.9926,56.44629,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.9,0.9,39.7143,50.53002,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.9,0.76,35.72122,45.008168,
+,17,2010,6/12/10,Guaymas Basin,24,0.28,M,5,Triphoturus,,Otolith.10,0.65,32.5838,40.66957,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.10,1.05,43.9926,56.44629,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.10,0.9,39.7143,50.53002,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.10,0.8,36.8621,46.58584,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.10,1,42.5665,54.4742,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.10,1.08,44.84826,57.629544,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.11,1,42.5665,54.4742,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.11,0.9,39.7143,50.53002,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.11,0.9,39.7143,50.53002,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.11,0.65,32.5838,40.66957,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.11,0.64,32.29858,40.275152,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.12,0.9,39.7143,50.53002,
+,9,2010,6/14/10,Guaymas Basin,29,0.52,F,3,Triphoturus,,Otolith.12,0.85,38.2882,48.55793,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.12,0.85,38.2882,48.55793,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.12,0.8,36.8621,46.58584,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.12,0.6,31.1577,38.69748,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.13,1,42.5665,54.4742,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.13,1,42.5665,54.4742,
+,13,2010,6/15/10,Rosalia - Marcos,23.5,0.28,F,1,Triphoturus,,Otolith.13,0.85,38.2882,48.55793,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.13,0.76,35.72122,45.008168,
+,18,2010,6/12/10,Guaymas Basin,31.5,0.67,M,5,Triphoturus,,Otolith.14,0.95,41.1404,52.50211,
+,15,2010,6/14/10,Guaymas Basin,29,0.61,F,2,Triphoturus,,Otolith.14,0.85,38.2882,48.55793,
+,23,2011,6/10/11,South of Nolasco Island,38,1.2,Female,5,Triphoturus,,Otolith.14,1.08,44.84826,57.629544,

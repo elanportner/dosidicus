@@ -1,0 +1,377 @@
+Call:
+rpart(formula = formula, data = data, weights = W, na.action = na.action, 
+    method = method, model = model, x = x, y = y, control = control, 
+    cost = cost, minsplit = 100, minbucket = 50, cp = 0.001)
+  n= 2091 
+
+            CP nsplit rel error    xerror       xstd
+1  0.056927125      0 1.0000000 1.0000000 0.01747837
+2  0.023089708      1 0.9430729 0.9430729 0.01865531
+3  0.015284304      5 0.8446658 0.8575114 0.01995826
+4  0.006544595      7 0.8140972 0.8291979 0.02028256
+5  0.004008789      9 0.8010080 0.8338107 0.02023310
+6  0.002224157     11 0.7929904 0.8378937 0.02018823
+7  0.002222011     13 0.7885421 0.8436893 0.02012279
+8  0.001445258     14 0.7863201 0.8557638 0.01997973
+9  0.001242602     16 0.7834296 0.8570871 0.01996349
+10 0.001046789     19 0.7797018 0.8551183 0.01998760
+11 0.001000000     20 0.7786550 0.8538215 0.02000336
+
+Node number 1: 2091 observations,    complexity param=0.05692712
+  predicted class=F_Benthosema       expected loss=0.7851005  P(node) =1
+    class counts: 8.76361 6.05316 2.68048 5.96058 4.2287 81.5988 36.9586 192.55 3.50992 11.4955 64.4376 3.51652 13.5695 2.61753 53.451 106.629 17.9139 33.5013 80.8971 165.667
+   probabilities: 0.010 0.007 0.003 0.007 0.005 0.091 0.041 0.215 0.004 0.013 0.072 0.004 0.015 0.003 0.060 0.119 0.020 0.037 0.090 0.185 
+  left son=2 (125 obs) right son=3 (1966 obs)
+  Primary splits:
+      Lon    < -112.947  to the left,  improve=27.38175, (0 missing)
+      Year   < 2001      to the left,  improve=20.61483, (0 missing)
+      Lat    < 28.45322  to the left,  improve=20.01374, (0 missing)
+      Length < 23.9      to the right, improve=18.21593, (16 missing)
+  Surrogate splits:
+      Lat < 28.45322  to the right, agree=0.961, adj=0.545, (0 split)
+
+Node number 2: 125 observations
+  predicted class=F_Engraulis        expected loss=0.4022347  P(node) =0.0859375
+    class counts:     0     0     0 0.0555556  0.75     0     0 5.98254     0     0 46.0279 3.26652 3.33295     0 0.833333 4.74359     1     0     0 11.0076
+   probabilities: 0.000 0.000 0.000 0.001 0.010 0.000 0.000 0.078 0.000 0.000 0.598 0.042 0.043 0.000 0.011 0.062 0.013 0.000 0.000 0.143 
+
+Node number 3: 1966 observations,    complexity param=0.02308971
+  predicted class=F_Benthosema       expected loss=0.772201  P(node) =0.9140625
+    class counts: 8.76361 6.05316 2.68048 5.90502 3.4787 81.5988 36.9586 186.567 3.50992 11.4955 18.4096  0.25 10.2366 2.61753 52.6176 101.885 16.9139 33.5013 80.8971 154.66
+   probabilities: 0.011 0.007 0.003 0.007 0.004 0.100 0.045 0.228 0.004 0.014 0.022 0.000 0.012 0.003 0.064 0.124 0.021 0.041 0.099 0.189 
+  left son=6 (106 obs) right son=7 (1860 obs)
+  Primary splits:
+      Year   < 2001      to the left,  improve=19.96256, (0 missing)
+      Length < 21.95     to the right, improve=16.36527, (12 missing)
+      Lon    < -112.1909 to the left,  improve=12.26886, (0 missing)
+      Lat    < 27.24187  to the right, improve=12.03011, (0 missing)
+  Surrogate splits:
+      Length < 67.1      to the right, agree=0.933, adj=0.035, (0 split)
+
+Node number 6: 106 observations
+  predicted class=F_Benthosema       expected loss=0.2573874  P(node) =0.06361607
+    class counts: 0.544503     0     0     0     1 4.78816   0.5 42.3289     0 1.82231     0     0 2.93605     0 0.284824 2.60719     0     0 0.188034     0
+   probabilities: 0.010 0.000 0.000 0.000 0.018 0.084 0.009 0.743 0.000 0.032 0.000 0.000 0.052 0.000 0.005 0.046 0.000 0.000 0.003 0.000 
+
+Node number 7: 1860 observations,    complexity param=0.02308971
+  predicted class=R_Crust            expected loss=0.7970343  P(node) =0.8504464
+    class counts: 8.21911 6.05316 2.68048 5.90502 2.4787 76.8107 36.4586 144.238 3.50992 9.67321 18.4096  0.25 7.30054 2.61753 52.3328 99.2781 16.9139 33.5013 80.7091 154.66
+   probabilities: 0.011 0.008 0.004 0.008 0.003 0.101 0.048 0.189 0.005 0.013 0.024 0.000 0.010 0.003 0.069 0.130 0.022 0.044 0.106 0.203 
+  left son=14 (1049 obs) right son=15 (811 obs)
+  Primary splits:
+      Length < 21.55     to the right, improve=14.061850, (12 missing)
+      Year   < 2013      to the left,  improve=13.506310, (0 missing)
+      Lat    < 27.24187  to the right, improve= 9.542495, (0 missing)
+      Lon    < -112.1392 to the left,  improve= 5.800478, (0 missing)
+  Surrogate splits:
+      Year < 2013      to the left,  agree=0.893, adj=0.752, (12 split)
+      Lon  < -111.4304 to the right, agree=0.674, adj=0.248, (0 split)
+      Lat  < 27.30519  to the left,  agree=0.638, adj=0.165, (0 split)
+
+Node number 14: 1049 observations,    complexity param=0.02308971
+  predicted class=F_Benthosema       expected loss=0.8030624  P(node) =0.4854911
+    class counts: 6.68577 5.64364 1.43882 4.98836 2.3537 70.8197 27.336 85.6679 0.146667 6.75005 18.4096  0.25 6.17554 1.69329 36.4466 26.9767 15.6554 21.1114 22.4761 73.9746
+   probabilities: 0.015 0.013 0.003 0.011 0.005 0.163 0.063 0.197 0.000 0.016 0.042 0.001 0.014 0.004 0.084 0.062 0.036 0.049 0.052 0.170 
+  left son=28 (866 obs) right son=29 (183 obs)
+  Primary splits:
+      Lat    < 27.24187  to the right, improve=8.613314, (0 missing)
+      Year   < 2010.5    to the left,  improve=4.385956, (0 missing)
+      Lon    < -112.2302 to the left,  improve=3.141155, (0 missing)
+      Length < 39.25     to the right, improve=2.618792, (12 missing)
+  Surrogate splits:
+      Lon  < -110.7394 to the left,  agree=0.860, adj=0.265, (0 split)
+      Year < 2016.5    to the left,  agree=0.825, adj=0.084, (0 split)
+
+Node number 15: 811 observations,    complexity param=0.0152843
+  predicted class=R_Crust            expected loss=0.7532561  P(node) =0.3649554
+    class counts: 1.53333 0.409524 1.24167 0.916667 0.125 5.99096 9.12257 58.5706 3.36326 2.92316     0     0 1.125 0.924242 15.8862 72.3013 1.25844 12.3899 58.2329 80.6853
+   probabilities: 0.005 0.001 0.004 0.003 0.000 0.018 0.028 0.179 0.010 0.009 0.000 0.000 0.003 0.003 0.049 0.221 0.004 0.038 0.178 0.247 
+  left son=30 (345 obs) right son=31 (466 obs)
+  Primary splits:
+      Lon    < -112.1909 to the left,  improve=5.561550, (0 missing)
+      Year   < 2015.5    to the left,  improve=3.977412, (0 missing)
+      Lat    < 28.56917  to the left,  improve=3.860145, (0 missing)
+      Length < 17.15     to the right, improve=1.344201, (0 missing)
+  Surrogate splits:
+      Lat    < 27.84488  to the right, agree=0.703, adj=0.382, (0 split)
+      Year   < 2015.5    to the left,  agree=0.667, adj=0.306, (0 split)
+      Length < 18.95     to the left,  agree=0.560, adj=0.083, (0 split)
+
+Node number 28: 866 observations,    complexity param=0.02308971
+  predicted class=F_Benthosema       expected loss=0.7660219  P(node) =0.3928571
+    class counts: 6.38577 4.49641 1.39715 3.98002 2.28704 63.4419 25.611 82.3603  0.08 6.25005 5.44405  0.25 2.86602 0.290909 29.3784 23.4822 15.4637 17.4431 17.0376 44.0543
+   probabilities: 0.018 0.013 0.004 0.011 0.006 0.180 0.073 0.234 0.000 0.018 0.015 0.001 0.008 0.001 0.083 0.067 0.044 0.050 0.048 0.125 
+  left son=56 (332 obs) right son=57 (534 obs)
+  Primary splits:
+      Year   < 2010.5    to the left,  improve=5.360852, (0 missing)
+      Lat    < 27.30519  to the right, improve=3.768038, (0 missing)
+      Lon    < -111.3547 to the left,  improve=3.305807, (0 missing)
+      Length < 48.75     to the right, improve=1.696200, (12 missing)
+  Surrogate splits:
+      Lon    < -112.2302 to the left,  agree=0.804, adj=0.549, (0 split)
+      Length < 43.75     to the right, agree=0.787, adj=0.510, (0 split)
+      Lat    < 28.18825  to the right, agree=0.690, adj=0.288, (0 split)
+
+Node number 29: 183 observations
+  predicted class=R_Crust            expected loss=0.6395145  P(node) =0.09263393
+    class counts:   0.3 1.14722 0.0416667 1.00833 0.0666667 7.37778 1.725 3.30758 0.0666667   0.5 12.9656     0 3.30952 1.40238 7.06824 3.49454 0.191667 3.66837 5.43849 29.9203
+   probabilities: 0.004 0.014 0.001 0.012 0.001 0.089 0.021 0.040 0.001 0.006 0.156 0.000 0.040 0.017 0.085 0.042 0.002 0.044 0.066 0.360 
+
+Node number 30: 345 observations,    complexity param=0.0152843
+  predicted class=F_Benthosema       expected loss=0.6980255  P(node) =0.1752232
+    class counts:   0.7 0.142857 0.991667     0     0 3.03775 1.88761 47.41 0.166667 0.309524     0     0     0 0.333333 3.78817 35.8105 0.0909091 2.38652 21.4213 38.5232
+   probabilities: 0.004 0.001 0.006 0.000 0.000 0.019 0.012 0.302 0.001 0.002 0.000 0.000 0.000 0.002 0.024 0.228 0.001 0.015 0.136 0.245 
+  left son=60 (276 obs) right son=61 (69 obs)
+  Primary splits:
+      Lon    < -112.6186 to the right, improve=7.126150, (0 missing)
+      Lat    < 28.56917  to the left,  improve=7.126150, (0 missing)
+      Length < 17.35     to the right, improve=3.926263, (0 missing)
+      Year   < 2015.5    to the left,  improve=3.321039, (0 missing)
+  Surrogate splits:
+      Lat < 28.56917  to the left,  agree=1, adj=1, (0 split)
+
+Node number 31: 466 observations,    complexity param=0.006544595
+  predicted class=R_Crust            expected loss=0.7519877  P(node) =0.1897321
+    class counts: 0.833333 0.266667  0.25 0.916667 0.125 2.95321 7.23496 11.1606 3.19659 2.61364     0     0 1.125 0.590909 12.098 36.4908 1.16753 10.0033 36.8116 42.1621
+   probabilities: 0.005 0.002 0.001 0.005 0.001 0.017 0.043 0.066 0.019 0.015 0.000 0.000 0.007 0.003 0.071 0.215 0.007 0.059 0.217 0.248 
+  left son=62 (375 obs) right son=63 (91 obs)
+  Primary splits:
+      Lat    < 27.24187  to the right, improve=1.9714540, (0 missing)
+      Year   < 2013.5    to the left,  improve=1.5002810, (0 missing)
+      Lon    < -112.099  to the left,  improve=1.3339920, (0 missing)
+      Length < 20.65     to the left,  improve=0.8874141, (0 missing)
+  Surrogate splits:
+      Lon    < -111.3539 to the left,  agree=0.929, adj=0.714, (0 split)
+      Year   < 2010.5    to the right, agree=0.776, adj=0.095, (0 split)
+      Length < 21.15     to the left,  agree=0.759, adj=0.024, (0 split)
+
+Node number 56: 332 observations,    complexity param=0.001242602
+  predicted class=C_Pterygioteuthis  expected loss=0.7343313  P(node) =0.1707589
+    class counts: 3.72011 3.54524 0.161039     0 0.037037 40.6473 13.6273 20.1502     0 0.650455 1.48571     0 1.12827     0 13.2592 12.78 8.05349 3.82226 8.5305 21.4018
+   probabilities: 0.024 0.023 0.001 0.000 0.000 0.266 0.089 0.132 0.000 0.004 0.010 0.000 0.007 0.000 0.087 0.084 0.053 0.025 0.056 0.140 
+  left son=112 (174 obs) right son=113 (158 obs)
+  Primary splits:
+      Year   < 2008.5    to the left,  improve=2.466868, (0 missing)
+      Lon    < -111.8144 to the left,  improve=2.466868, (0 missing)
+      Length < 41.5      to the right, improve=2.347012, (5 missing)
+      Lat    < 27.30519  to the right, improve=2.152981, (0 missing)
+  Surrogate splits:
+      Lon    < -111.8144 to the left,  agree=1.000, adj=1.000, (0 split)
+      Length < 34.75     to the right, agree=0.961, adj=0.887, (0 split)
+      Lat    < 27.30519  to the right, agree=0.869, adj=0.623, (0 split)
+
+Node number 57: 534 observations,    complexity param=0.004008789
+  predicted class=F_Benthosema       expected loss=0.6873866  P(node) =0.2220982
+    class counts: 2.66566 0.951176 1.23611 3.98002  2.25 22.7946 11.9838 62.2101  0.08 5.59959 3.95833  0.25 1.73775 0.290909 16.1192 10.7022 7.41026 13.6208 8.50713 22.6524
+   probabilities: 0.013 0.005 0.006 0.020 0.011 0.115 0.060 0.313 0.000 0.028 0.020 0.001 0.009 0.001 0.081 0.054 0.037 0.068 0.043 0.114 
+  left son=114 (257 obs) right son=115 (277 obs)
+  Primary splits:
+      Lat    < 27.30519  to the right, improve=6.299069, (0 missing)
+      Lon    < -111.2    to the right, improve=3.977939, (0 missing)
+      Year   < 2013      to the left,  improve=1.392252, (0 missing)
+      Length < 39.25     to the right, improve=1.348869, (7 missing)
+  Surrogate splits:
+      Lon    < -111.3547 to the right, agree=0.769, adj=0.516, (0 split)
+      Year   < 2013      to the right, agree=0.638, adj=0.242, (0 split)
+      Length < 23.4      to the left,  agree=0.538, adj=0.032, (0 split)
+
+Node number 60: 276 observations,    complexity param=0.001445258
+  predicted class=F_Benthosema       expected loss=0.6290212  P(node) =0.140625
+    class counts:   0.7 0.142857 0.991667     0     0 2.78775 1.88761 46.7433 0.166667 0.309524     0     0     0     0 3.18817 31.8605 0.0909091 2.38652 9.50464 25.2398
+   probabilities: 0.006 0.001 0.008 0.000 0.000 0.022 0.015 0.371 0.001 0.002 0.000 0.000 0.000 0.000 0.025 0.253 0.001 0.019 0.075 0.200 
+  left son=120 (176 obs) right son=121 (100 obs)
+  Primary splits:
+      Length < 17.85     to the right, improve=1.6644520, (0 missing)
+      Lat    < 27.94302  to the left,  improve=1.1375750, (0 missing)
+      Lon    < -112.3316 to the left,  improve=0.5429767, (0 missing)
+      Year   < 2015.5    to the left,  improve=0.4860707, (0 missing)
+  Surrogate splits:
+      Lon < -112.5294 to the right, agree=0.556, adj=0.051, (0 split)
+      Lat < 28.48642  to the left,  agree=0.556, adj=0.051, (0 split)
+
+Node number 61: 69 observations
+  predicted class=R_Crust            expected loss=0.5715054  P(node) =0.03459821
+    class counts:     0     0     0     0     0  0.25     0 0.666667     0     0     0     0     0 0.333333   0.6  3.95     0     0 11.9167 13.2833
+   probabilities: 0.000 0.000 0.000 0.000 0.000 0.008 0.000 0.022 0.000 0.000 0.000 0.000 0.000 0.011 0.019 0.127 0.000 0.000 0.384 0.428 
+
+Node number 62: 375 observations,    complexity param=0.006544595
+  predicted class=M_Pteropoda        expected loss=0.7735678  P(node) =0.1428571
+    class counts: 0.833333 0.266667  0.25 0.916667     0 2.06035 5.85996 9.45229 2.57159 2.61364     0     0 0.125 0.590909 10.4552 27.7326 0.631818 10.0033 28.9833 24.6534
+   probabilities: 0.007 0.002 0.002 0.007 0.000 0.016 0.046 0.074 0.020 0.020 0.000 0.000 0.001 0.005 0.082 0.217 0.005 0.078 0.226 0.193 
+  left son=124 (149 obs) right son=125 (226 obs)
+  Primary splits:
+      Lat    < 27.47878  to the right, improve=1.1765750, (0 missing)
+      Lon    < -111.5491 to the left,  improve=1.1649390, (0 missing)
+      Length < 17.55     to the right, improve=0.4017386, (0 missing)
+  Surrogate splits:
+      Lon    < -111.5491 to the left,  agree=0.875, adj=0.709, (0 split)
+      Year   < 2016.5    to the right, agree=0.664, adj=0.218, (0 split)
+      Length < 18.55     to the right, agree=0.633, adj=0.145, (0 split)
+
+Node number 63: 91 observations
+  predicted class=R_Crust            expected loss=0.5831262  P(node) =0.046875
+    class counts:     0     0     0     0 0.125 0.892857 1.375 1.70833 0.625     0     0     0     1     0 1.64286 8.75824 0.535714     0 7.8283 17.5087
+   probabilities: 0.000 0.000 0.000 0.000 0.003 0.021 0.033 0.041 0.015 0.000 0.000 0.000 0.024 0.000 0.039 0.209 0.013 0.000 0.186 0.417 
+
+Node number 112: 174 observations,    complexity param=0.001242602
+  predicted class=C_Pterygioteuthis  expected loss=0.7332035  P(node) =0.1116071
+    class counts: 3.38678 3.33571     0     0 0.037037 26.6797 10.2975 18.778     0 0.420455 1.48571     0 1.04827     0 5.53497 9.46667 6.72619 1.33333 0.424242 11.0455
+   probabilities: 0.034 0.033 0.000 0.000 0.000 0.267 0.103 0.188 0.000 0.004 0.015 0.000 0.010 0.000 0.055 0.095 0.067 0.013 0.004 0.110 
+  left son=224 (119 obs) right son=225 (55 obs)
+  Primary splits:
+      Length < 59.5      to the left,  improve=1.1090630, (5 missing)
+      Lat    < 27.8642   to the left,  improve=0.5720229, (0 missing)
+      Lon    < -112.2723 to the right, improve=0.5720229, (0 missing)
+
+Node number 113: 158 observations,    complexity param=0.001242602
+  predicted class=C_Pterygioteuthis  expected loss=0.7364593  P(node) =0.05915179
+    class counts: 0.333333 0.209524 0.161039     0     0 13.9677 3.32974 1.37226     0  0.23     0     0  0.08     0 7.72425 3.31333 1.3273 2.48893 8.10626 10.3564
+   probabilities: 0.006 0.004 0.003 0.000 0.000 0.264 0.063 0.026 0.000 0.004 0.000 0.000 0.002 0.000 0.146 0.063 0.025 0.047 0.153 0.195 
+  left son=226 (53 obs) right son=227 (105 obs)
+  Primary splits:
+      Length < 26.75     to the left,  improve=1.22788, (0 missing)
+
+Node number 114: 257 observations
+  predicted class=F_Benthosema       expected loss=0.5398812  P(node) =0.1160714
+    class counts: 1.55788 0.374542 0.236111 2.56182  0.25 6.3558 4.61178 47.8524     0 2.5445 3.95833  0.25 1.04167 0.290909 9.98583 5.0265 2.57692 1.92912 3.13056 9.46539
+   probabilities: 0.015 0.004 0.002 0.025 0.002 0.061 0.044 0.460 0.000 0.024 0.038 0.002 0.010 0.003 0.096 0.048 0.025 0.019 0.030 0.091 
+
+Node number 115: 277 observations,    complexity param=0.004008789
+  predicted class=C_Pterygioteuthis  expected loss=0.8269598  P(node) =0.1060268
+    class counts: 1.10778 0.576634     1 1.41821     2 16.4388 7.37198 14.3577  0.08 3.0551     0     0 0.696078     0 6.13335 5.6757 4.83333 11.6917 5.37657 13.1871
+   probabilities: 0.012 0.006 0.011 0.015 0.021 0.173 0.078 0.151 0.001 0.032 0.000 0.000 0.007 0.000 0.065 0.060 0.051 0.123 0.057 0.139 
+  left son=230 (202 obs) right son=231 (75 obs)
+  Primary splits:
+      Length < 27.75     to the right, improve=1.286606, (4 missing)
+
+Node number 120: 176 observations,    complexity param=0.001046789
+  predicted class=F_Benthosema       expected loss=0.570391  P(node) =0.07477679
+    class counts:     0 0.142857 0.491667     0     0 2.78775 1.68761 28.7838 0.166667 0.309524     0     0     0     0 2.35483 15.1629 0.0909091 2.38652 4.63797 7.99698
+   probabilities: 0.000 0.002 0.007 0.000 0.000 0.042 0.025 0.430 0.002 0.005 0.000 0.000 0.000 0.000 0.035 0.226 0.001 0.036 0.069 0.119 
+  left son=240 (126 obs) right son=241 (50 obs)
+  Primary splits:
+      Lat    < 27.79242  to the left,  improve=1.0189090, (0 missing)
+      Year   < 2015.5    to the left,  improve=0.5112603, (0 missing)
+      Length < 20.1      to the right, improve=0.4892452, (0 missing)
+      Lon    < -112.2922 to the right, improve=0.4855659, (0 missing)
+  Surrogate splits:
+      Lon  < -112.2922 to the right, agree=0.925, adj=0.773, (0 split)
+      Year < 2015.5    to the left,  agree=0.896, adj=0.682, (0 split)
+
+Node number 121: 100 observations,    complexity param=0.001445258
+  predicted class=F_Benthosema       expected loss=0.6956013  P(node) =0.06584821
+    class counts:   0.7     0   0.5     0     0     0   0.2 17.9595     0     0     0     0     0     0 0.833333 16.6976     0     0 4.86667 17.2429
+   probabilities: 0.012 0.000 0.008 0.000 0.000 0.000 0.003 0.304 0.000 0.000 0.000 0.000 0.000 0.000 0.014 0.283 0.000 0.000 0.082 0.292 
+  left son=242 (50 obs) right son=243 (50 obs)
+  Primary splits:
+      Length < 16.15     to the left,  improve=0.2876246, (0 missing)
+  Surrogate splits:
+      Lat < 28.18392  to the left,  agree=0.559, adj=0.037, (0 split)
+
+Node number 124: 149 observations
+  predicted class=F_UnID             expected loss=0.7210836  P(node) =0.06138393
+    class counts:  0.25     0  0.25     0     0 1.06667 3.73571 4.88575     0     0     0     0     0   0.5 5.17485 15.3404     0 0.824675 10.4627 12.5092
+   probabilities: 0.005 0.000 0.005 0.000 0.000 0.019 0.068 0.089 0.000 0.000 0.000 0.000 0.000 0.009 0.094 0.279 0.000 0.015 0.190 0.227 
+
+Node number 125: 226 observations,    complexity param=0.002224157
+  predicted class=M_Pteropoda        expected loss=0.7462934  P(node) =0.08147321
+    class counts: 0.583333 0.266667     0 0.916667     0 0.993687 2.12424 4.56654 2.57159 2.61364     0     0 0.125 0.0909091 5.2803 12.3922 0.631818 9.17866 18.5206 12.1442
+   probabilities: 0.008 0.004 0.000 0.013 0.000 0.014 0.029 0.063 0.035 0.036 0.000 0.000 0.002 0.001 0.072 0.170 0.009 0.126 0.254 0.166 
+  left son=250 (85 obs) right son=251 (141 obs)
+  Primary splits:
+      Length < 17.55     to the right, improve=0.6608905, (0 missing)
+      Lat    < 27.44356  to the left,  improve=0.3577962, (0 missing)
+  Surrogate splits:
+      Lat  < 27.44356  to the left,  agree=0.781, adj=0.484, (0 split)
+      Year < 2013.5    to the left,  agree=0.753, adj=0.419, (0 split)
+      Lon  < -111.4304 to the right, agree=0.726, adj=0.355, (0 split)
+
+Node number 224: 119 observations
+  predicted class=C_Pterygioteuthis  expected loss=0.6776676  P(node) =0.07366071
+    class counts:  2.45 1.63571     0     0 0.037037 21.2739 5.14603 12.0641     0 0.295455 1.48571     0 0.048273     0 3.50163 8.26667 3.58333 0.333333 0.333333 5.54545
+   probabilities: 0.037 0.025 0.000 0.000 0.001 0.322 0.078 0.183 0.000 0.004 0.023 0.000 0.001 0.000 0.053 0.125 0.054 0.005 0.005 0.084 
+
+Node number 225: 55 observations
+  predicted class=F_Benthosema       expected loss=0.8025327  P(node) =0.03794643
+    class counts: 0.936782   1.7     0     0     0 5.40571 5.15152 6.71389     0 0.125     0     0     1     0 2.03333   1.2 3.14286     1 0.0909091   5.5
+   probabilities: 0.028 0.050 0.000 0.000 0.000 0.159 0.152 0.197 0.000 0.004 0.000 0.000 0.029 0.000 0.060 0.035 0.092 0.029 0.003 0.162 
+
+Node number 226: 53 observations
+  predicted class=C_Pterygioteuthis  expected loss=0.6906728  P(node) =0.01785714
+    class counts:     0     0     0     0     0 4.94924 0.792453 0.0238095     0  0.23     0     0  0.08     0 3.09606 1.55778     0 2.05463 3.19222 0.0238095
+   probabilities: 0.000 0.000 0.000 0.000 0.000 0.309 0.050 0.001 0.000 0.014 0.000 0.000 0.005 0.000 0.194 0.097 0.000 0.128 0.200 0.001 
+
+Node number 227: 105 observations
+  predicted class=R_Crust            expected loss=0.7207413  P(node) =0.04129464
+    class counts: 0.333333 0.209524 0.161039     0     0 9.01842 2.53729 1.34845     0     0     0     0     0     0 4.62819 1.75556 1.3273 0.434297 4.91404 10.3326
+   probabilities: 0.009 0.006 0.004 0.000 0.000 0.244 0.069 0.036 0.000 0.000 0.000 0.000 0.000 0.000 0.125 0.047 0.036 0.012 0.133 0.279 
+
+Node number 230: 202 observations,    complexity param=0.002222011
+  predicted class=C_Pterygioteuthis  expected loss=0.8117941  P(node) =0.06696429
+    class counts: 0.598958 0.576634     1 1.24827     2 11.2924 3.37198 9.69686  0.08 3.0551     0     0 0.696078     0 4.93494 2.13497 2.83333 2.98636 4.25395 9.24021
+   probabilities: 0.010 0.010 0.017 0.021 0.033 0.188 0.056 0.162 0.001 0.051 0.000 0.000 0.012 0.000 0.082 0.036 0.047 0.050 0.071 0.154 
+  left son=460 (62 obs) right son=461 (140 obs)
+  Primary splits:
+      Length < 34.75     to the left,  improve=0.5892345, (4 missing)
+
+Node number 231: 75 observations
+  predicted class=F_Vinciguerria     expected loss=0.7512767  P(node) =0.0390625
+    class counts: 0.508824     0     0 0.169935     0 5.14646     4 4.66085     0     0     0     0     0     0 1.19841 3.54074     2 8.70531 1.12262 3.94685
+   probabilities: 0.015 0.000 0.000 0.005 0.000 0.147 0.114 0.133 0.000 0.000 0.000 0.000 0.000 0.000 0.034 0.101 0.057 0.249 0.032 0.113 
+
+Node number 240: 126 observations
+  predicted class=F_Benthosema       expected loss=0.5030535  P(node) =0.05022321
+    class counts:     0 0.142857 0.491667     0     0 2.07259 0.66337 22.3626 0.166667 0.142857     0     0     0     0 1.93817 8.00533     0 0.79561 2.90464 5.31365
+   probabilities: 0.000 0.003 0.011 0.000 0.000 0.046 0.015 0.497 0.004 0.003 0.000 0.000 0.000 0.000 0.043 0.178 0.000 0.018 0.065 0.118 
+
+Node number 241: 50 observations
+  predicted class=F_UnID             expected loss=0.6746556  P(node) =0.02455357
+    class counts:     0     0     0     0     0 0.715152 1.02424 6.42121     0 0.166667     0     0     0     0 0.416667 7.15758 0.0909091 1.59091 1.73333 2.68333
+   probabilities: 0.000 0.000 0.000 0.000 0.000 0.033 0.047 0.292 0.000 0.008 0.000 0.000 0.000 0.000 0.019 0.325 0.004 0.072 0.079 0.122 
+
+Node number 242: 50 observations
+  predicted class=F_Benthosema       expected loss=0.656994  P(node) =0.03571429
+    class counts:   0.5     0     0     0     0     0     0 10.9762     0     0     0     0     0     0   0.5 8.29762     0     0   3.5 8.22619
+   probabilities: 0.016 0.000 0.000 0.000 0.000 0.000 0.000 0.343 0.000 0.000 0.000 0.000 0.000 0.000 0.016 0.259 0.000 0.000 0.109 0.257 
+
+Node number 243: 50 observations
+  predicted class=R_Crust            expected loss=0.6660494  P(node) =0.03013393
+    class counts:   0.2     0   0.5     0     0     0   0.2 6.98333     0     0     0     0     0     0 0.333333   8.4     0     0 1.36667 9.01667
+   probabilities: 0.007 0.000 0.019 0.000 0.000 0.000 0.007 0.259 0.000 0.000 0.000 0.000 0.000 0.000 0.012 0.311 0.000 0.000 0.051 0.334 
+
+Node number 250: 85 observations
+  predicted class=M_Pteropoda        expected loss=0.6796188  P(node) =0.03459821
+    class counts: 0.333333 0.166667     0 0.916667     0 0.777778  0.75 2.7096 1.15657  1.25     0     0     0     0 2.42424     3     0 2.88889 9.93182 4.69444
+   probabilities: 0.011 0.005 0.000 0.030 0.000 0.025 0.024 0.087 0.037 0.040 0.000 0.000 0.000 0.000 0.078 0.097 0.000 0.093 0.320 0.151 
+
+Node number 251: 141 observations,    complexity param=0.002224157
+  predicted class=F_UnID             expected loss=0.7763769  P(node) =0.046875
+    class counts:  0.25   0.1     0     0     0 0.215909 1.37424 1.85694 1.41503 1.36364     0     0 0.125 0.0909091 2.85606 9.39217 0.631818 6.28977 8.58876 7.44975
+   probabilities: 0.006 0.002 0.000 0.000 0.000 0.005 0.033 0.044 0.034 0.032 0.000 0.000 0.003 0.002 0.068 0.224 0.015 0.150 0.204 0.177 
+  left son=502 (60 obs) right son=503 (81 obs)
+  Primary splits:
+      Length < 16.05     to the right, improve=0.7880236, (0 missing)
+  Surrogate splits:
+      Lon < -111.8171 to the left,  agree=0.667, adj=0.30, (0 split)
+      Lat < 27.43332  to the left,  agree=0.643, adj=0.25, (0 split)
+
+Node number 460: 62 observations
+  predicted class=C_Pterygioteuthis  expected loss=0.752843  P(node) =0.01897321
+    class counts:  0.25 0.125     0 0.724359     0 4.20167 1.48915 3.6543     0 0.720442     0     0     0     0 1.69848 0.986111 0.166667 1.2834 1.11396 0.586447
+   probabilities: 0.015 0.007 0.000 0.043 0.000 0.247 0.088 0.215 0.000 0.042 0.000 0.000 0.000 0.000 0.100 0.058 0.010 0.075 0.066 0.034 
+
+Node number 461: 140 observations
+  predicted class=R_Crust            expected loss=0.7987497  P(node) =0.04799107
+    class counts: 0.348958 0.451634     1 0.523913     2 7.09069 1.88283 6.04255  0.08 2.33465     0     0 0.696078     0 3.23645 1.14886 2.66667 1.70296 3.13999 8.65376
+   probabilities: 0.008 0.011 0.023 0.012 0.047 0.165 0.044 0.141 0.002 0.054 0.000 0.000 0.016 0.000 0.075 0.027 0.062 0.040 0.073 0.201 
+
+Node number 502: 60 observations
+  predicted class=F_UnID             expected loss=0.65375  P(node) =0.02232143
+    class counts:     0     0     0     0     0 0.0909091 0.957576 0.9375 0.653409 0.765152     0     0     0 0.0909091  0.75 6.925 0.181818 1.82765 3.79583 3.02424
+   probabilities: 0.000 0.000 0.000 0.000 0.000 0.005 0.048 0.047 0.033 0.038 0.000 0.000 0.000 0.005 0.037 0.346 0.009 0.091 0.190 0.151 
+
+Node number 503: 81 observations
+  predicted class=M_Pteropoda        expected loss=0.7821396  P(node) =0.02455357
+    class counts:  0.25   0.1     0     0     0 0.125 0.416667 0.919444 0.761616 0.598485     0     0 0.125     0 2.10606 2.46717  0.45 4.46212 4.79293 4.42551
+   probabilities: 0.011 0.005 0.000 0.000 0.000 0.006 0.019 0.042 0.035 0.027 0.000 0.000 0.006 0.000 0.096 0.112 0.020 0.203 0.218 0.201 
+

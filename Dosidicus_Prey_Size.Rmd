@@ -1,0 +1,552 @@
+---
+title: "Squid_prey_size"
+author: "Elan Portner"
+date: "4/29/2018"
+output:
+  html_document: default
+  word_document: default
+---
+
+##Examining squid diet (new data from 2015, 2016, and 2017, and comparing to historical data from Unai)
+####### Starting with summary of new data, collected by Portner 2015-2017
+
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+### Load necessary packages ###
+library(tidyverse)
+library(tidyr)
+library(ggplot2)
+library(RColorBrewer)
+library(colorRamps)
+library(marmap)
+library(ncdf4)
+# library(ncdf) installation not working
+library(RNetCDF)
+library(raster)
+library(maps)
+library(mapdata)
+library(maptools)
+library(rgdal)
+library(move)
+library(mapproj)
+library(sp)
+require(dismo)
+library(ggplot2)
+library(ggmap)
+library(RColorBrewer)
+library(reshape2)
+library(mapplots)
+library(rgeos)
+library(polyclip)
+# library(spatstat) installation not working
+library(Rmisc)
+
+### Build color palettes ###
+coul = brewer.pal(11, "RdBu")
+coul = colorRampPalette(coul)(12)
+coul2=colorRampPalette(coul)(20)
+coul2 = c("#67001F", "#8E0C24" ,"#B01E2D", "#C5413E" ,"#D76654" ,"#E88B6E" ,"#F1AB8E" ,"#F9C8AF","#053061","#124984","#1F63A8","#2F79B5", "#3F8EC0","#61A6CD","#86BDDA", "#C5DEEC","#DBEAF2","#EDF2F5", "#66CDAA", "aquamarine4")
+coul3=brewer.pal(11, "RdYlBu")
+coul3=colorRampPalette(coul3)(22)
+coul4=colorRampPalette(coul3)(16)
+
+coul5 = brewer.pal(11, "Spectral")
+coul5=colorRampPalette(coul5)(12)
+coul6=colorRampPalette(coul5)(9)
+### read specimen metadata ###
+specimen <- read.csv("Dosidcus_specimens_2015-2017.csv")
+specimen$year <- as.factor(specimen$year)
+specimen$mat <- as.factor(specimen$mat)
+specimen$fullness <- as.factor(specimen$fullness)
+
+### read prey data. "squid" is all data, "prey" is PORTNER data only (2015, 2016 and 2017) ###
+squid <- read.csv("Dosidicus_Diet_FINAL_Portner_only.csv")
+squid$capture_lon <- ifelse(squid$capture_lon > 1, squid$capture_lon*-1, squid$capture_lon)
+prey <- subset(squid, capture_year == "2015"|capture_year == "2016"|capture_year == "2017")
+prey$fulltest <- prey$v_crustacean+prey$v_fish+prey$v_cephalopod+prey$v_other
+I <- which(prey$fulltest == "0")
+prey <- prey[-I,]
+squidv <- prey[,c(1:18)]
+
+### Preparing dataframe to examine changes in quantitative volume of prey groups ###
+squidvl <- squidv %>% 
+  gather(key   = Group,
+         value = vgroup,
+         dplyr::starts_with('v_'))
+squidvl$vgroup <- squidvl$vgroup/100
+squidvl$Group <- as.factor(squidvl$Group)
+squidvl$capture_year <- as.factor(squidvl$capture_year)
+
+squidvlsum <- aggregate(vgroup~Group*capture_year, squidvl, FUN = sum)
+squidvlyear <- aggregate(vgroup~capture_year, squidvl, FUN = sum)
+colnames(squidvlyear) <- c("capture_year", "yearN")
+
+squidvlsum <- merge(squidvlsum, squidvlyear, by = "capture_year")
+squidvlsum$prop <- squidvlsum$vgroup/squidvlsum$yearN
+
+### Preparing dataframe to examine changes in percent number of prey groups for PORTNER and MARKAIDA diet data ###
+squid$fulltest <- squid$v_crustacean+squid$v_fish+squid$v_cephalopod+squid$v_other
+I <- which(squid$fulltest == "0")
+squiddiet <- squid[-I,]
+
+# REmove samples from very far North
+I <- which(squiddiet$capture_lat>30)
+squiddiet <- squiddiet[-I,]
+# Remove samples from IMECOCAL
+I <- which(squiddiet$capture_lat==25.5767)
+squiddiet <- squiddiet[-I,]
+# Remove samples from Volcan Marias
+I <- which(squiddiet$capture_lon>(-108))
+squiddiet <- squiddiet[-I,]
+# Remove remaining samples fcollected in the Pacific
+I <- which(squiddiet$locality=="OFF MAGDALENA")
+squiddiet <- squiddiet[-I,]
+
+
+squiddiet <- squiddiet[,c(1, 3:11,13, 19:40)]
+
+squidl <- squiddiet %>% 
+  gather(key   = Group,
+         value = Nsquid,
+         dplyr::starts_with('F_'),
+         dplyr::starts_with('C_'),
+         dplyr::starts_with('M_'),
+         dplyr::starts_with('R_'))
+
+squidl$capture_year <- as.factor(squidl$capture_year)
+
+squidls <- aggregate(Nsquid~id, squidl, FUN = sum)
+colnames(squidls) <- c("id", "totN")
+squidlg <- merge(squidl, squidls, by = "id")
+squidlg$PropN <- squidlg$Nsquid/squidlg$totN
+squidlg$Group <- as.factor(squidlg$Group)
+
+squidlsum <- aggregate(Nsquid~Group*capture_year, squidl, FUN = sum)
+squidlyear <- aggregate(Nsquid~capture_year, squidl, FUN = sum)
+colnames(squidlyear) <- c("capture_year", "yearN")
+
+squidlsum <- merge(squidlsum, squidlyear, by = "capture_year")
+squidlsum$prop <- squidlsum$Nsquid/squidlsum$yearN
+
+#Preparing dataframe to examine changes in percent number of prey groups for PORTNER diet data only
+prey <- prey[,c(1, 3:11,13, 19:40)]
+
+preyl <- prey %>% 
+  gather(key   = Group,
+         value = Nprey,
+         dplyr::starts_with('F_'),
+         dplyr::starts_with('C_'),
+         dplyr::starts_with('M_'),
+         dplyr::starts_with('R_'))
+
+preyl$capture_year <- as.factor(preyl$capture_year)
+
+preyls <- aggregate(Nprey~id, preyl, FUN = sum)
+colnames(preyls) <- c("id", "totN")
+preylg <- merge(preyl, preyls, by = "id")
+preylg$PropN <- preylg$Nprey/preylg$totN
+preylg$Group <- as.factor(preylg$Group)
+
+preylsum <- aggregate(Nprey~Group*capture_year, preyl, FUN = sum)
+preylyear <- aggregate(Nprey~capture_year, preyl, FUN = sum)
+colnames(preylyear) <- c("capture_year", "yearN")
+
+preylsum <- merge(preylsum, preylyear, by = "capture_year")
+preylsum$prop <- preylsum$Nprey/preylsum$yearN
+
+#read prey size data
+size <- read.csv("Dosidicus Prey Size 2018.csv")
+
+I <- which(size$locality == "IMECOCAL"|size$locality == "VOLCAN MARIAS")
+size <- size[-I,]
+I <- which(size$year=="1995"|size$year=="2005"|is.na(size$year))
+size <- size[-I,]
+
+sizespec <- unique(size[,c(1,3,4,7:10)])
+
+```
+
+
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+
+### Summary figures of specimen size (ML), maturity, sex
+histo1 <- ggplot(specimen, aes(x = ml, fill = year))+geom_histogram(colour = "black", binwidth = 2)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Fig. 1: Dosidicus collected from the GOC 2015 - 2017")+theme_dark()
+histo1
+
+histo1 <- ggplot(specimen, aes(x = ml, fill = year, color = year))+geom_density(binwidth = 1, alpha = 0.4)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fig. 2: Dosidicus collected from the GOC 2015 - 2017")+theme_dark()
+histo1
+
+histo1 <- ggplot(specimen, aes(x = ml, fill = sex))+geom_histogram(colour = "black", binwidth = 2)+facet_wrap(~year)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Fig. 3: Sex of Dosidicus collected from the GOC 2015 - 2017")+theme_dark()
+histo1
+
+histo1 <- ggplot(specimen, aes(x = ml, fill = mat))+geom_histogram(colour = "black", binwidth = 2)+facet_wrap(~year)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Fig. 4: Maturity of Dosidicus collected from the GOC 2015 - 2017")+theme_dark()
+histo1
+
+histo1 <- ggplot(specimen, aes(x = ml, fill = fullness))+geom_histogram(colour = "black", binwidth = 2)+facet_wrap(~year)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Fig. 5: Fullness of Dosidicus collected from the GOC 2015 - 2017")+theme_dark()
+histo1
+
+```
+
+####### Diet summary examining variation in qualitative percent volume of prey proups by year
+```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height=5, fig.width=7}
+squidv$capture_year <- as.factor(squidv$capture_year)
+
+# create map of GOC on which to plot sampling locations
+baja <- getNOAA.bathy(lon1 = -108, lon2 = -113,
+                        lat1 = 25, lat2 = 30, resolution = 1, keep=T)
+blues <- c("lightsteelblue4", "lightsteelblue3",
+           "lightsteelblue2", "lightsteelblue1")
+# Plotting the bathymetry with different colors for land and sea
+plot(baja, image = TRUE, land = TRUE, lwd = 0.1,
+     bpal = list(c(0, max(baja), "grey"),
+                 c(min(baja),0,blues)))
+# Making the coastline more visible
+plot(baja, deep = 0, shallow = 0, step = 0,
+     lwd = 0.4, add = TRUE)
+points(squidvl$capture_lon, squidvl$capture_lat, col = "black", pch = 21, bg = squidvl$capture_year)
+legend("top",title="Year", legend=c("2015", "2016", "2017"), fill = c("black", "red", "green", pch = 19))
+
+```
+
+#### Diet summary examining variation in percent volume and percent number of prey species by year
+###### Qualitative percent volume
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+
+# comparing qualitative percent volume of prey groups between years
+dietp <- ggplot(squidvlsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_brewer(palette = "RdBu")+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Proportional Volume")
+dietp
+```
+
+###### Percent number. Crustaceans were recorded as presence absennce in PORTNER dataset (resulting in underestimation of importance)
+```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height=7, fig.width=10}
+
+# comparing qualitative percent number of prey between years
+preylsum$Group <- as.factor(preylsum$Group)
+diet <- ggplot(preylsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul3)+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Numerical Proportion")
+diet
+
+
+```
+
+##### To examine whether some of these differences are driven by spatial varitation in sampling coverage (2015 are all from Santa Rosalia, 2016 and 2017 were collected during cruises that sampled throughout the central GOC), I removed samples that were collected in 2016 and 2017 outside of waters adjacent to Santa Rosalia.
+####### 2015: n = 100
+####### 2016: n = 13
+####### 2017: n = 8
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+
+I <- which(squidvl$capture_lat>27.5|squidvl$capture_lat<27)
+squidvl_mod <- squidvl[-I,]
+I <- which(squidvl_mod$capture_lon>-111.75)
+squidvl_mod <- squidvl_mod[-I,]
+
+squidvl_modsum <- aggregate(vgroup~Group*capture_year, squidvl_mod, FUN = sum)
+squidvl_modyear <- aggregate(vgroup~capture_year, squidvl_mod, FUN = sum)
+colnames(squidvl_modyear) <- c("capture_year", "yearN")
+
+squidvl_modsum <- merge(squidvl_modsum, squidvl_modyear, by = "capture_year")
+squidvl_modsum$prop <- squidvl_modsum$vgroup/squidvl_modsum$yearN
+
+baja2 <- getNOAA.bathy(lon1 = -111.75, lon2 = -112.5,
+                        lat1 = 27.3, lat2 = 27.5, resolution = 1, keep=T)
+
+# Plotting the bathymetry with different colors for land and sea
+plot(baja2, image = TRUE, land = TRUE, lwd = 0.1, bpal = list(c(0, max(baja2), "grey"),
+                 c(min(baja2),0,blues)))
+# Making the coastline more visible
+plot(baja2, deep = 0, shallow = 0, step = 0,
+     lwd = 0.4, add = TRUE)
+points(squidvl_mod$capture_lon, squidvl_mod$capture_lat, col = "black", pch = 21, bg = squidvl_mod$capture_year)
+legend("left",title="Year", legend=c("2015", "2016", "2017"), fill = c("black", "red", "green", pch = 19))
+
+dietp <- ggplot(squidvl_modsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_brewer(palette = "RdBu")+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Proportional Volume")
+dietp
+
+I <- which(preyl$capture_lat>27.5|preyl$capture_lat<27)
+preyl_mod <- preyl[-I,]
+I <- which(preyl_mod$capture_lon>-111.75)
+preyl_mod <- preyl_mod[-I,]
+
+preyl_modsum <- aggregate(Nprey~Group*capture_year, preyl_mod, FUN = sum)
+preyl_modyear <- aggregate(Nprey~capture_year, preyl_mod, FUN = sum)
+colnames(preyl_modyear) <- c("capture_year", "yearN")
+
+preyl_modsum <- merge(preyl_modsum, preyl_modyear, by = "capture_year")
+preyl_modsum$prop <- preyl_modsum$Nprey/preyl_modsum$yearN
+
+I <- which(preyl_modsum$Nprey==0)
+preyl_modsum <- preyl_modsum[-I,]
+
+diet <- ggplot(preyl_modsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul4)+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Numerical Proportion")
+diet
+```
+
+#### Preliminary exploration of variability in _Dosidicus_ prey size during 1996-2017
+###### specimens removed from dataset due to stomach preservaiton (1995-August 1996 in formaldehyde, degraded otoliths), collection outside of central GOC (IMECOCAL, Volcan Marias, Off Magdalena), or low sample sizes (n = 1 measured prey from 2005)
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+
+# create map of GOC on which to plot sampling locations
+baja3 <- getNOAA.bathy(lon1 = -108, lon2 = -114,
+                        lat1 = 24, lat2 = 30, resolution = 1, keep=T)
+
+# I <- which(is.na(size$length..cm.))
+# size <- size[-I,1:18]
+```
+
+###### Size distribution of specimens
+```{r summary plots, echo = FALSE, warning=FALSE, message = FALSE}
+library(ggplot2)
+
+sizespec$year <- as.factor(sizespec$year)
+sizespecP <- subset(sizespec, year=="2015"|year=="2016"|year=="2017")
+
+histo1 <- ggplot(sizespec, aes(x = ml, fill = year))+geom_histogram(colour = "black", binwidth = 2)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_manual(values = coul)+ggtitle("Dosidicus collected from the GOC 1996 - 2017")+theme_dark()+theme(text=element_text(size=18))+xlab("Mantle Length (cm)")+ylab("Number of Stomachs")
+histo1
+
+squiddiet$capture_year <- as.factor(squiddiet$capture_year)
+
+squidcol <- with(squiddiet, 
+                 data.frame(capture_year = levels(capture_year),
+                            color = coul5))
+palette(coul5)
+I <- which(squiddiet$capture_year == "2015"|squiddiet$capture_year == "2016"|squiddiet$capture_year == "2017")
+squiddietunai <- squiddiet[-I,]
+# Plotting the bathymetry with different colors for land and sea
+plot(baja3, image = TRUE, land = TRUE, lwd = 0.1,
+     bpal = list(c(0, max(baja3), "grey"),
+                 c(min(baja3),0,blues)))
+# Making the coastline more visible
+plot(baja3, deep = 0, shallow = 0, step = 0,
+     lwd = 0.4, add = TRUE)
+points(squiddiet$capture_lon, squiddiet$capture_lat, pch = 21, col ="black", cex = 1, alpha = 0.3,
+       bg = squiddiet$capture_year)
+legend("topright",title="Year", legend=c("1996", "1997", "1998","1999","2005", "2006","2007", "2010", "2011","2015", "2016", "2017"), fill = c("#9E0142", "#D0384D" ,"#EE6445" ,"#FA9C58", "#FDCD7B" ,"#FEF0A7" ,"#F3FAAD", "#D0EC9C", "#98D5A4", "#5CB7A9", "#3682BA", "#5E4FA2"), pch = 19)
+
+### As as frequency histogram ###
+histo1 <- ggplot(sizespec, aes(x = ml, fill = year, color = year))+geom_density(binwidth = 1, alpha = 0.4)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_manual(values = coul)+ scale_color_manual(values = coul)+ggtitle("Dosidicus collected from the GOC 1996 - 2017")+theme_dark()
+histo1
+
+### Just for PORTNER data ###
+
+# histo1 <- ggplot(sizespecP, aes(x = ml, fill = year))+geom_histogram(colour = "black", binwidth = 2)+facet_wrap(~year, nrow = 3)
+# histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Dosidicus collected from the GOC 2015 - 2017 - Portner Dataset")+theme_dark()
+# histo1
+
+```
+
+```{r, , echo = FALSE, warning=FALSE, message = FALSE, fig.height=7, fig.width=12}
+# comparing qualitative percent number of prey between years
+preylsum$Group <- as.factor(preylsum$Group)
+diet <- ggplot(squidlsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul3)+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Numerical Proportion")
+diet
+```
+
+## Relationship between ML and prey length
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+
+size$author <- ifelse(size$year == "2015"|size$year == "2016"|size$year == "2017", "2015-2017", "1996-2011")
+size$author <- as.factor(size$author)
+
+size$year <- as.factor(size$year)
+
+size$bin1 <- cut(size$ml, breaks = seq(10,85, by = 5), labels = c("10-15", "15-20", "20-25","25-30", "30-35","35-40", "40-45","45-50", "50-55","55-60", "60-65","65-70", "70-75","75-80", "80-85"))
+size$season <- ifelse(size$month >5 & size$month <11, "summer", "winter")
+
+fish <- subset(size, prey == "Benthosema"|prey=="Triphoturus")
+ceph <- subset(size, prey == "Pterygioteuthis")
+
+relat <- ggplot(ceph, aes(ml, DML, color = year))+geom_point()+geom_smooth(method = "lm")
+relat <- relat + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_manual(values = coul)+ggtitle("Cephalopod prey size")+theme_dark()
+relat
+```
+
+```{r,  warning=FALSE, message = FALSE}
+anova.ceph <- aov(DML~year, ceph)
+summary(anova.ceph)
+TukeyHSD(anova.ceph)
+```
+
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+relat <- ggplot(fish, aes(ml, SL, color = year))+geom_point()+geom_smooth(method = "lm")+facet_wrap(~prey, nrow =2)
+relat <- relat + xlab("Mantle Length (cm)")+ylab("Standard length (mm)")+ scale_color_manual(values = coul)+ggtitle("Fish prey size")+theme_dark()
+relat
+
+```
+
+```{r, warning=FALSE, message = FALSE}
+bentho <- subset(fish, prey == "Benthosema")
+tripho <- subset(fish, prey == "Triphoturus")
+anova.fish <- aov(SL~year, bentho)
+summary(anova.fish)
+TukeyHSD(anova.fish)
+
+anova.fish <- aov(SL~year, tripho)
+summary(anova.fish)
+TukeyHSD(anova.fish)
+```
+
+#### Subsetting by summer months (June - October) to minimize variability driven by seasonality in prey size
+```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height=7, fig.width=12}
+squiddiet$season <- ifelse(squiddiet$capture_month >5 & squiddiet$capture_month <11, "summer", "winter")
+summer <- subset(squiddiet, season=="summer")
+summer$capture_year <- as.factor(summer$capture_year)
+
+I <- which(summer$capture_year=="1997"|summer$capture_year=="1998"|summer$capture_year=="1999")
+summer <- summer[-I,]
+
+plot(baja3, image = TRUE, land = TRUE, lwd = 0.1,
+     bpal = list(c(0, max(baja3), "grey"),
+                 c(min(baja3),0,blues)))
+# Making the coastline more visible
+plot(baja3, deep = 0, shallow = 0, step = 0,
+     lwd = 0.4, add = TRUE)
+points(summer$capture_lon, summer$capture_lat, pch = 21, col ="black", cex = 1, alpha = 0.3,
+       bg = summer$capture_year)
+legend("topright",title="Year", legend=c("1996", "2005", "2006","2007", "2010", "2011","2015", "2016", "2017"), fill = c("#9E0142", "#DB4849", "#F78E53", "#FDD180", "#F8F4AA", "#D4ED9E", "#89CDA5", "#4495B3" ,"#5E4FA2"), pch = 19)
+
+
+histo1 <- ggplot(summer, aes(x = mantle_length, group = capture_year, fill = capture_year))+geom_histogram(colour = "black", binwidth = 3)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Dosidicus collected GOC summer 1996 - 2017")+theme_dark()+theme(text=element_text(size=18))+xlab("Mantle Length (cm)")+ylab("Number of Stomachs")
+histo1
+
+summerl <- summer %>% 
+  gather(key   = Group,
+         value = Nprey,
+         dplyr::starts_with('F_'),
+         dplyr::starts_with('C_'),
+         dplyr::starts_with('M_'),
+         dplyr::starts_with('R_'))
+
+summerl$capture_year <- as.factor(summerl$capture_year)
+
+summerls <- aggregate(Nprey~id, summerl, FUN = sum)
+colnames(summerls) <- c("id", "totN")
+summerlg <- merge(summerl, summerls, by = "id")
+summerlg$PropN <- summerlg$Nprey/summerlg$totN
+summerlg$Group <- as.factor(summerlg$Group)
+
+summerlsum <- aggregate(Nprey~Group*capture_year, summerl, FUN = sum)
+summerlyear <- aggregate(Nprey~capture_year, summerl, FUN = sum)
+colnames(summerlyear) <- c("capture_year", "yearN")
+
+summerlsum <- merge(summerlsum, summerlyear, by = "capture_year")
+summerlsum$prop <- summerlsum$Nprey/summerlsum$yearN
+
+summerl$Group <- as.factor(summerl$Group)
+
+diet <- ggplot(summerlsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul3)+theme_dark()+theme(text=element_text(size=16))+xlab("Year")+ylab("Numerical Proportion")
+diet
+```
+
+
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+size$year <- as.factor(size$year)
+I <- which(size$month < 6 | size$month >10)
+summersize <- size[-I,]
+fish2 <- subset(summersize, prey == "Benthosema"|prey=="Triphoturus")
+ceph2 <- subset(summersize, prey == "Pterygioteuthis")
+
+relat <- ggplot(ceph2, aes(ml, DML, color = year))+geom_point()+geom_smooth(method = "lm")
+relat <- relat + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Cephalopod prey size")+theme_dark()+theme(text=element_text(size=18))
+relat
+
+anova.ceph <- aov(DML~year, ceph2)
+summary(anova.ceph)
+TukeyHSD(anova.ceph)
+```
+
+```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height= 10, fig.width=12}
+# relat1 <- ggplot(fish, aes(ml, SL, color = year, group = year))+geom_point()+geom_smooth(method = "lm")+facet_wrap(~prey, nrow = 2)
+# relat1 <- relat1 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fish prey size")+theme_dark()
+# relat1
+
+relat1.2 <- ggplot(fish2, aes(ml, SL, color = year, group = year))+geom_point()+geom_smooth(method = "lm")+facet_wrap(~prey, nrow = 2)
+relat1.2 <- relat1.2 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fish prey size")+theme_dark()
+relat1.2
+
+benthosema2 <- subset(fish2, prey=="Benthosema")
+anova.fish <- aov(SL~year, benthosema2)
+summary(anova.fish)
+TukeyHSD(anova.fish)
+
+triphoturus2 <- subset(fish2, prey=="Triphoturus")
+anova.fish <- aov(SL~year, triphoturus2)
+summary(anova.fish)
+TukeyHSD(anova.fish)
+```
+
+### Subsetting dataset for squid 20-25cm ML (highest overlap between new and historic diet datasets)
+
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+small <- subset(size, ml <= 25 & ml >= 20 )
+smallfish <- subset(small, prey == "Benthosema"|prey=="Triphoturus")
+smallceph <- subset(small, prey == "Pterygioteuthis")
+
+relat2 <- ggplot(smallceph, aes(ml, DML, color = year))+geom_point()
+relat2 <- relat2 + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Cephalopod prey size in small squid (20-25cmML)")+theme_dark()
+relat2
+
+```
+
+```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height= 10, fig.width=12}
+relat3 <- ggplot(smallfish, aes(ml, SL, color = year))+geom_point(size = 2)+facet_wrap(~prey, nrow = 2)
+relat3 <- relat3 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fish prey size in small squid (20-25cmML)")+theme_dark()
+relat3
+
+```
+<!-- ### Assigned specimens to length bins -->
+
+<!-- ```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height= 10, fig.width=12} -->
+
+<!-- relat1 <- ggplot(fish, aes(bin1, SL, color = year))+geom_point()+facet_wrap(~prey, nrow = 2) -->
+<!-- relat1 <- relat1 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fish prey size")+theme_dark() -->
+<!-- relat1 -->
+
+<!-- bentho <- subset(fish2, prey=="Benthosema") -->
+<!-- bentho20 <- subset(bentho, bin1 == "20-25"|bin1 == "25-30") -->
+
+<!-- size.aov <- aov(ml~year, bentho20) -->
+<!-- summary(size.aov) -->
+<!-- TukeyHSD(size.aov) -->
+
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- year.aov <- aov(SL~year, bentho20) -->
+<!-- summary(year.aov) -->
+<!-- TukeyHSD(year.aov) -->
+<!-- ``` -->
+
+```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height=10}
+relat4 <- ggplot(smallfish, aes(SL, group = author, fill = author))+geom_histogram(position = "identity", alpha = 0.5)+facet_wrap(~prey, nrow = 2, scales = "free_y")
+relat4 <- relat4 + xlab("Standard Length (mm)")+scale_fill_manual(values = c("#AB1529","#1E61A5"))+ggtitle("Fish prey size in small squid (20-25cmML)")
+relat4
+
+relat5 <- ggplot(smallfish, aes(ml, group = author, fill = author))+geom_histogram(position = "identity", alpha = 0.5)+facet_wrap(~prey, nrow = 2, scales = "free_y")
+relat5 <- relat5 + xlab("Mantle Length (cm)")+scale_fill_manual(values = c("#AB1529","#1E61A5"))+ggtitle("ML distribuiton of 'small' squid (20-25cmML)")
+relat5
+
+```
+
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+
+testfish <- aov(ml~author*prey, smallfish)
+testfish
+
+
+t.test(ml~author, smallfish)
+
+TukeyHSD(testfish)
+# fishmeans <- aggregate(SL~year*prey, smallfish, FUN = mean)
+# colnames(fishmeans) <- c("year","prey", "SL_mean")
+# smallfish <-  merge(smallfish, fishmeans, by = "year"*"prey")
+# boxes <- ggplot(smallfish, aes(year, SL_mean, fill = year))+geom_boxplot()+geom_point(aes(Year, SL_mean))+scale_fill_brewer(palette = "RdBu")
+# boxes
+```
+

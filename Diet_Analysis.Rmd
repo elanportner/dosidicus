@@ -1,0 +1,55 @@
+---
+title: "Dosidicus Diet Analysis"
+author: "Elan Portner"
+date: "4/9/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Examining squid diet (new data from 2015, 2016, and 2017, and comparing to historical data from Unai)
+
+```{r, echo = FALSE,  warning=FALSE, message = FALSE}
+library(tidyr)
+library(ggplot2)
+
+# read data
+specimen <- read.csv("Dosidcus_specimens_2015-2017.csv")
+
+
+specimen$year <- as.factor(specimen$year)
+specimen$mat <- as.factor(specimen$mat)
+specimen$fullness <- as.factor(specimen$fullness)
+
+histo1 <- ggplot(specimen, aes(x = ml, fill = year))+geom_histogram(colour = "black", binwidth = 2)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Fig. 1: Dosidicus collected from the GOC 2015 - 2017")+theme_dark()+theme(text = element_text(size=14))
+histo1
+
+histo1 <- ggplot(specimen, aes(x = ml, fill = year, color = year))+geom_density(binwidth = 1, alpha = 0.4)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fig. 2: Dosidicus collected from the GOC 2015 - 2017")+theme_dark()+theme(text = element_text(size=14))
+histo1
+
+histo1 <- ggplot(specimen, aes(x = ml, fill = sex))+geom_histogram(colour = "black", binwidth = 2)+facet_wrap(~year)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Fig. 3: Sex of Dosidicus collected from the GOC 2015 - 2017")+theme_dark()+theme(text = element_text(size=14))
+histo1
+
+histo1 <- ggplot(specimen, aes(x = ml, fill = mat))+geom_histogram(colour = "black", binwidth = 2)+facet_wrap(~year)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Fig. 4: Maturity of Dosidicus collected from the GOC 2015 - 2017")+theme_dark()+theme(text = element_text(size=14))
+histo1
+
+histo1 <- ggplot(specimen, aes(x = ml, fill = fullness))+geom_histogram(colour = "black", binwidth = 2)+facet_wrap(~year)
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Fig. 5: Fullness of Dosidicus collected from the GOC 2015 - 2017")+theme_dark()+theme(text = element_text(size=14))
+histo1
+
+
+```
+
+## Including Plots
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
