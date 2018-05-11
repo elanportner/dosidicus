@@ -192,6 +192,7 @@ histo1
 ```
 
 ####### Diet summary examining variation in qualitative percent volume of prey proups by year
+
 ```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height=5, fig.width=7}
 squidv$capture_year <- as.factor(squidv$capture_year)
 
@@ -209,15 +210,15 @@ plot(baja, deep = 0, shallow = 0, step = 0,
      lwd = 0.4, add = TRUE)
 points(squidvl$capture_lon, squidvl$capture_lat, col = "black", pch = 21, bg = squidvl$capture_year)
 legend("top",title="Year", legend=c("2015", "2016", "2017"), fill = c("black", "red", "green", pch = 19))
-
+title(main = "Fig. 6: Map of distribution of D. gigas sampling locations in the GOC 2015-2017")
 ```
 
 #### Diet summary examining variation in percent volume and percent number of prey species by year
-###### Qualitative percent volume
+
 ```{r, echo = FALSE,  warning=FALSE, message = FALSE}
 
 # comparing qualitative percent volume of prey groups between years
-dietp <- ggplot(squidvlsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_brewer(palette = "RdBu")+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Proportional Volume")
+dietp <- ggplot(squidvlsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_brewer(palette = "RdBu")+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Proportional Volume")+ggtitle("Fig. 7: Qualitative percent volume of prey groups by year")
 dietp
 ```
 
@@ -226,7 +227,7 @@ dietp
 
 # comparing qualitative percent number of prey between years
 preylsum$Group <- as.factor(preylsum$Group)
-diet <- ggplot(preylsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul3)+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Numerical Proportion")
+diet <- ggplot(preylsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul3)+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Numerical Proportion")+ggtitle("Fig. 8: Percent number of prey by year")
 diet
 
 
@@ -236,6 +237,7 @@ diet
 ####### 2015: n = 100
 ####### 2016: n = 13
 ####### 2017: n = 8
+
 ```{r, echo = FALSE,  warning=FALSE, message = FALSE}
 
 I <- which(squidvl$capture_lat>27.5|squidvl$capture_lat<27)
@@ -261,8 +263,9 @@ plot(baja2, deep = 0, shallow = 0, step = 0,
      lwd = 0.4, add = TRUE)
 points(squidvl_mod$capture_lon, squidvl_mod$capture_lat, col = "black", pch = 21, bg = squidvl_mod$capture_year)
 legend("left",title="Year", legend=c("2015", "2016", "2017"), fill = c("black", "red", "green", pch = 19))
+title(main = "Fig. 9: Map of samples from immediate vicinity of Santa Rosalia 2015-2017")
 
-dietp <- ggplot(squidvl_modsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_brewer(palette = "RdBu")+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Proportional Volume")
+dietp <- ggplot(squidvl_modsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_brewer(palette = "RdBu")+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Proportional Volume")+ggtitle("Fig. 10: Proportional volume of prey groups in vicinity of Santa Rosalia 2015-2017")
 dietp
 
 I <- which(preyl$capture_lat>27.5|preyl$capture_lat<27)
@@ -280,7 +283,7 @@ preyl_modsum$prop <- preyl_modsum$Nprey/preyl_modsum$yearN
 I <- which(preyl_modsum$Nprey==0)
 preyl_modsum <- preyl_modsum[-I,]
 
-diet <- ggplot(preyl_modsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul4)+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Numerical Proportion")
+diet <- ggplot(preyl_modsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul4)+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Numerical Proportion")+ggtitle("Fig. 11: Numerical percent composition of prey in vicinity of Santa Rosalia 2015-2017")
 diet
 ```
 
@@ -304,7 +307,7 @@ sizespec$year <- as.factor(sizespec$year)
 sizespecP <- subset(sizespec, year=="2015"|year=="2016"|year=="2017")
 
 histo1 <- ggplot(sizespec, aes(x = ml, fill = year))+geom_histogram(colour = "black", binwidth = 2)
-histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_manual(values = coul)+ggtitle("Dosidicus collected from the GOC 1996 - 2017")+theme_dark()+theme(text=element_text(size=18))+xlab("Mantle Length (cm)")+ylab("Number of Stomachs")
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_manual(values = coul)+ggtitle("Dosidicus collected from the GOC 1996 - 2017")+theme_dark()+theme(text=element_text(size=18))+xlab("Mantle Length (cm)")+ylab("Number of Stomachs")+ggtitle("Fig. 12: ML of squid for full D. gigas diet dataset")
 histo1
 
 squiddiet$capture_year <- as.factor(squiddiet$capture_year)
@@ -325,10 +328,11 @@ plot(baja3, deep = 0, shallow = 0, step = 0,
 points(squiddiet$capture_lon, squiddiet$capture_lat, pch = 21, col ="black", cex = 1, alpha = 0.3,
        bg = squiddiet$capture_year)
 legend("topright",title="Year", legend=c("1996", "1997", "1998","1999","2005", "2006","2007", "2010", "2011","2015", "2016", "2017"), fill = c("#9E0142", "#D0384D" ,"#EE6445" ,"#FA9C58", "#FDCD7B" ,"#FEF0A7" ,"#F3FAAD", "#D0EC9C", "#98D5A4", "#5CB7A9", "#3682BA", "#5E4FA2"), pch = 19)
+title(main="Fig. 13: Map of sampling locations of D. gigas in the GOC 1996-2017")
 
 ### As as frequency histogram ###
 histo1 <- ggplot(sizespec, aes(x = ml, fill = year, color = year))+geom_density(binwidth = 1, alpha = 0.4)
-histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_manual(values = coul)+ scale_color_manual(values = coul)+ggtitle("Dosidicus collected from the GOC 1996 - 2017")+theme_dark()
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_manual(values = coul)+ scale_color_manual(values = coul)+ggtitle("Fig. 14: Dosidicus collected from the GOC 1996 - 2017")+theme_dark()
 histo1
 
 ### Just for PORTNER data ###
@@ -342,7 +346,7 @@ histo1
 ```{r, , echo = FALSE, warning=FALSE, message = FALSE, fig.height=7, fig.width=12}
 # comparing qualitative percent number of prey between years
 preylsum$Group <- as.factor(preylsum$Group)
-diet <- ggplot(squidlsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul3)+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Numerical Proportion")
+diet <- ggplot(squidlsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul3)+theme_dark()+theme(text=element_text(size=18))+xlab("Year")+ylab("Numerical Proportion")+ggtitle("Fig. 15:Numerical percent composition of prey 1996-2017")
 diet
 ```
 
@@ -361,7 +365,7 @@ fish <- subset(size, prey == "Benthosema"|prey=="Triphoturus")
 ceph <- subset(size, prey == "Pterygioteuthis")
 
 relat <- ggplot(ceph, aes(ml, DML, color = year))+geom_point()+geom_smooth(method = "lm")
-relat <- relat + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_manual(values = coul)+ggtitle("Cephalopod prey size")+theme_dark()
+relat <- relat + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_manual(values = coul)+ggtitle("Fig. 16: Cephalopod prey size")+theme_dark()
 relat
 ```
 
@@ -373,7 +377,7 @@ TukeyHSD(anova.ceph)
 
 ```{r, echo = FALSE,  warning=FALSE, message = FALSE}
 relat <- ggplot(fish, aes(ml, SL, color = year))+geom_point()+geom_smooth(method = "lm")+facet_wrap(~prey, nrow =2)
-relat <- relat + xlab("Mantle Length (cm)")+ylab("Standard length (mm)")+ scale_color_manual(values = coul)+ggtitle("Fish prey size")+theme_dark()
+relat <- relat + xlab("Mantle Length (cm)")+ylab("Standard length (mm)")+ scale_color_manual(values = coul)+ggtitle("Fig. 17: Fish prey size")+theme_dark()
 relat
 
 ```
@@ -390,7 +394,9 @@ summary(anova.fish)
 TukeyHSD(anova.fish)
 ```
 
-#### Subsetting by summer months (June - October) to minimize variability driven by seasonality in prey size
+
+### Subsetting by summer months (June - October) to minimize variability driven by seasonality in prey size
+
 ```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height=7, fig.width=12}
 squiddiet$season <- ifelse(squiddiet$capture_month >5 & squiddiet$capture_month <11, "summer", "winter")
 summer <- subset(squiddiet, season=="summer")
@@ -408,10 +414,10 @@ plot(baja3, deep = 0, shallow = 0, step = 0,
 points(summer$capture_lon, summer$capture_lat, pch = 21, col ="black", cex = 1, alpha = 0.3,
        bg = summer$capture_year)
 legend("topright",title="Year", legend=c("1996", "2005", "2006","2007", "2010", "2011","2015", "2016", "2017"), fill = c("#9E0142", "#DB4849", "#F78E53", "#FDD180", "#F8F4AA", "#D4ED9E", "#89CDA5", "#4495B3" ,"#5E4FA2"), pch = 19)
-
+title(main="Fig. 18: Map of sampling locations of D. gigas during summer in the GOC")
 
 histo1 <- ggplot(summer, aes(x = mantle_length, group = capture_year, fill = capture_year))+geom_histogram(colour = "black", binwidth = 3)
-histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Dosidicus collected GOC summer 1996 - 2017")+theme_dark()+theme(text=element_text(size=18))+xlab("Mantle Length (cm)")+ylab("Number of Stomachs")
+histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Dosidicus collected GOC summer 1996 - 2017")+theme_dark()+theme(text=element_text(size=18))+xlab("Mantle Length (cm)")+ylab("Number of Stomachs")+ggtitle("Fig. 19: Size of specimens collected during summer in the GOC 1996-2017")
 histo1
 
 summerl <- summer %>% 
@@ -439,7 +445,7 @@ summerlsum$prop <- summerlsum$Nprey/summerlsum$yearN
 
 summerl$Group <- as.factor(summerl$Group)
 
-diet <- ggplot(summerlsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul3)+theme_dark()+theme(text=element_text(size=16))+xlab("Year")+ylab("Numerical Proportion")
+diet <- ggplot(summerlsum, aes(capture_year, prop, fill = Group))+geom_bar(stat="identity")+scale_fill_manual(values=coul3)+theme_dark()+theme(text=element_text(size=16))+xlab("Year")+ylab("Numerical Proportion")+ggtitle("Fig. 19: Numerical percent prey composition of squid collected during summer in the GOC 1996-2017")
 diet
 ```
 
@@ -452,7 +458,7 @@ fish2 <- subset(summersize, prey == "Benthosema"|prey=="Triphoturus")
 ceph2 <- subset(summersize, prey == "Pterygioteuthis")
 
 relat <- ggplot(ceph2, aes(ml, DML, color = year))+geom_point()+geom_smooth(method = "lm")
-relat <- relat + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Cephalopod prey size")+theme_dark()+theme(text=element_text(size=18))
+relat <- relat + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_brewer(palette = "RdBu")+gtitle("Fig. 20: Size of Pterygioteuthis from specimens collected during summer in the GOC 1996-2017")+theme_dark()+theme(text=element_text(size=18))
 relat
 
 anova.ceph <- aov(DML~year, ceph2)
@@ -466,7 +472,7 @@ TukeyHSD(anova.ceph)
 # relat1
 
 relat1.2 <- ggplot(fish2, aes(ml, SL, color = year, group = year))+geom_point()+geom_smooth(method = "lm")+facet_wrap(~prey, nrow = 2)
-relat1.2 <- relat1.2 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fish prey size")+theme_dark()
+relat1.2 <- relat1.2 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+gtitle("Fig. 21: Size of fish prey from specimens collected during summer in the GOC 1996-2017")+theme_dark()
 relat1.2
 
 benthosema2 <- subset(fish2, prey=="Benthosema")
