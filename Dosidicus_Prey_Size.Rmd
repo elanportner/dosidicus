@@ -458,7 +458,7 @@ fish2 <- subset(summersize, prey == "Benthosema"|prey=="Triphoturus")
 ceph2 <- subset(summersize, prey == "Pterygioteuthis")
 
 relat <- ggplot(ceph2, aes(ml, DML, color = year))+geom_point()+geom_smooth(method = "lm")
-relat <- relat + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_brewer(palette = "RdBu")+gtitle("Fig. 20: Size of Pterygioteuthis from specimens collected during summer in the GOC 1996-2017")+theme_dark()+theme(text=element_text(size=18))
+relat <- relat + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fig. 20: Size of Pterygioteuthis from specimens collected during summer in the GOC 1996-2017")+theme_dark()+theme(text=element_text(size=18))
 relat
 
 anova.ceph <- aov(DML~year, ceph2)
@@ -472,7 +472,7 @@ TukeyHSD(anova.ceph)
 # relat1
 
 relat1.2 <- ggplot(fish2, aes(ml, SL, color = year, group = year))+geom_point()+geom_smooth(method = "lm")+facet_wrap(~prey, nrow = 2)
-relat1.2 <- relat1.2 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+gtitle("Fig. 21: Size of fish prey from specimens collected during summer in the GOC 1996-2017")+theme_dark()
+relat1.2 <- relat1.2 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fig. 21: Size of fish prey from specimens collected during summer in the GOC 1996-2017")+theme_dark()
 relat1.2
 
 benthosema2 <- subset(fish2, prey=="Benthosema")
