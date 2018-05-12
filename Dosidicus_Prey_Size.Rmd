@@ -177,6 +177,10 @@ histo1 <- ggplot(specimen, aes(x = ml, fill = year, color = year))+geom_density(
 histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fig. 2: Dosidicus collected from the GOC 2015 - 2017")+theme_dark()
 histo1
 
+ml.year <- aov(ml~year, specimen)
+summary(ml.year)
+TukeyHSD(ml.year)
+
 histo1 <- ggplot(specimen, aes(x = ml, fill = sex))+geom_histogram(colour = "black", binwidth = 2)+facet_wrap(~year)
 histo1 <- histo1 + xlab("Mantle Length (cm)")+ scale_fill_brewer(palette = "RdBu")+ggtitle("Fig. 3: Sex of Dosidicus collected from the GOC 2015 - 2017")+theme_dark()
 histo1
