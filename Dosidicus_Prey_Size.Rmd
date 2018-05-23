@@ -37,6 +37,7 @@ library(reshape2)
 library(mapplots)
 library(rgeos)
 library(polyclip)
+library(vegan)
 # library(spatstat) installation not working
 library(Rmisc)
 
@@ -498,65 +499,25 @@ smallfish <- subset(small, prey == "Benthosema"|prey=="Triphoturus")
 smallceph <- subset(small, prey == "Pterygioteuthis")
 
 relat2 <- ggplot(smallceph, aes(ml, DML, color = year))+geom_point()
-relat2 <- relat2 + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Cephalopod prey size in small squid (20-25cmML)")+theme_dark()
+relat2 <- relat2 + xlab("Mantle Length (cm)")+ylab("Pterygiotuethis ML (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fig. 22: Cephalopod prey size in small squid (20-25cmML)")+theme_dark()
 relat2
 
 ```
 
 ```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height= 10, fig.width=12}
 relat3 <- ggplot(smallfish, aes(ml, SL, color = year))+geom_point(size = 2)+facet_wrap(~prey, nrow = 2)
-relat3 <- relat3 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fish prey size in small squid (20-25cmML)")+theme_dark()
+relat3 <- relat3 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fig. 23: Fish prey size in small squid (20-25cmML)")+theme_dark()
 relat3
 
 ```
-<!-- ### Assigned specimens to length bins -->
 
-<!-- ```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height= 10, fig.width=12} -->
-
-<!-- relat1 <- ggplot(fish, aes(bin1, SL, color = year))+geom_point()+facet_wrap(~prey, nrow = 2) -->
-<!-- relat1 <- relat1 + xlab("Mantle Length (cm)")+ylab("Standard Length (mm)")+ scale_color_brewer(palette = "RdBu")+ggtitle("Fish prey size")+theme_dark() -->
-<!-- relat1 -->
-
-<!-- bentho <- subset(fish2, prey=="Benthosema") -->
-<!-- bentho20 <- subset(bentho, bin1 == "20-25"|bin1 == "25-30") -->
-
-<!-- size.aov <- aov(ml~year, bentho20) -->
-<!-- summary(size.aov) -->
-<!-- TukeyHSD(size.aov) -->
-
-
-<!-- ``` -->
-
-<!-- ```{r} -->
-<!-- year.aov <- aov(SL~year, bentho20) -->
-<!-- summary(year.aov) -->
-<!-- TukeyHSD(year.aov) -->
-<!-- ``` -->
-
-```{r, echo = FALSE,  warning=FALSE, message = FALSE, fig.height=10}
-relat4 <- ggplot(smallfish, aes(SL, group = author, fill = author))+geom_histogram(position = "identity", alpha = 0.5)+facet_wrap(~prey, nrow = 2, scales = "free_y")
-relat4 <- relat4 + xlab("Standard Length (mm)")+scale_fill_manual(values = c("#AB1529","#1E61A5"))+ggtitle("Fish prey size in small squid (20-25cmML)")
-relat4
-
-relat5 <- ggplot(smallfish, aes(ml, group = author, fill = author))+geom_histogram(position = "identity", alpha = 0.5)+facet_wrap(~prey, nrow = 2, scales = "free_y")
-relat5 <- relat5 + xlab("Mantle Length (cm)")+scale_fill_manual(values = c("#AB1529","#1E61A5"))+ggtitle("ML distribuiton of 'small' squid (20-25cmML)")
-relat5
-
-```
 
 ```{r, echo = FALSE,  warning=FALSE, message = FALSE}
 
-testfish <- aov(ml~author*prey, smallfish)
-testfish
-
-
-t.test(ml~author, smallfish)
-
+smallbentho = subset(smallfish, prey == "Benthosema")
+testfish <- aov(SL~year, smallbentho)
+summary(testfish)
 TukeyHSD(testfish)
-# fishmeans <- aggregate(SL~year*prey, smallfish, FUN = mean)
-# colnames(fishmeans) <- c("year","prey", "SL_mean")
-# smallfish <-  merge(smallfish, fishmeans, by = "year"*"prey")
-# boxes <- ggplot(smallfish, aes(year, SL_mean, fill = year))+geom_boxplot()+geom_point(aes(Year, SL_mean))+scale_fill_brewer(palette = "RdBu")
-# boxes
+
 ```
 
